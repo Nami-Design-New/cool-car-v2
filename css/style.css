@@ -4,6 +4,7 @@
   --mainColor05: #de01010d;
   --whiteColor: #ffffff;
   --darkColor: #0a0a0b;
+  --darkColor2: #141416;
   --lightDarkColor: #1a1818;
   --lightGrayColor: #888b91;
   --lightBorderColor: #e1e1e1;
@@ -488,6 +489,7 @@ footer .group ul li a:hover {
   box-shadow: none;
   border-radius: 24px;
   gap: 16px;
+  padding: 24px;
 }
 .profile .contentProfile .orders .accordion-item .accordion-button::after {
   filter: brightness(0) invert(1);
@@ -537,7 +539,7 @@ footer .group ul li a:hover {
      object-fit: contain;
 }
 .profile .contentProfile .orders .accordion-item .accordion-button .shortData .date .progressBar {
-  height: 8px;
+  height: 4px;
   width: 100%;
   background-color: var(--lightDarkColor);
   border-radius: 100px;
@@ -569,8 +571,86 @@ footer .group ul li a:hover {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.profile .contentProfile .orders .accordion-item .accordion-button .shortData.shipped .date .progressBar .progressLine {
+  background-color: #b67c00;
+}
+.profile .contentProfile .orders .accordion-item .accordion-button .shortData.shipped .status .icon {
+  background-color: rgba(182, 124, 0, 0.2);
+}
+.profile .contentProfile .orders .accordion-item .accordion-button .shortData.delivered .date .progressBar .progressLine {
+  background-color: #00b67c;
+}
+.profile .contentProfile .orders .accordion-item .accordion-button .shortData.delivered .status .icon {
+  background-color: rgba(0, 182, 124, 0.2);
+}
 .profile .contentProfile .orders .accordion-item .accordion-body {
   border: none;
+  padding: 0 24px 24px;
+  background-color: var(--darkColor2);
+  border-radius: 24px;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .info .icon {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .info .text {
+  display: flex;
+  flex-direction: column;
+  color: var(--lightGrayColor);
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .info .text span {
+  color: var(--whiteColor);
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--mainColor20);
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main .num {
+  padding: 8px;
+  background-color: var(--mainColor20);
+  border-radius: 100px;
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 16px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main h6 {
+  flex: 1;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main .price {
+  color: var(--mainColor);
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub p {
+  color: var(--lightGrayColor);
+}
+.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub p span {
+  color: var(--whiteColor);
 }
 
 .formGroup {

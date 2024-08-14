@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -22,6 +23,7 @@
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
     <!-- ================  header ================= -->
     <header>
@@ -114,8 +116,63 @@
                                     </div>
                                     <div id="order1" class="accordion-collapse collapse show"
                                         data-bs-parent="#ordersAccordion">
-                                        <div class="accordion-body">
-                                            This is the first item's accordion body.
+                                        <div class="accordion-body row">
+                                            <div class="col-md-6 p-2">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/orderID.svg" alt="">
+                                                    <div class="text"> رقم الطلب <span> 1092032 </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/payment.svg" alt="">
+                                                    <div class="text"> طرق الدفع <span> بطاقات الائتمان </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/location.svg" alt="">
+                                                    <div class="text"> العنوان <span> السعوديه / الرياض/ شارع فيصل
+                                                        </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/money.svg" alt="">
+                                                    <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 p-2">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/money.svg" alt="">
+                                                    <div class="text"> تفاصيل الطلب </div>
+                                                </div>
+                                                <div class="orderDetails">
+                                                    <div class="main">
+                                                        <span class="num"> 1</span>
+                                                        <h6> نانو سيراميك x2 </h6>
+                                                        <span class="price"> 200 ريال </span>
+                                                    </div>
+                                                    <div class="sub">
+                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="orderDetails">
+                                                    <div class="main">
+                                                        <span class="num"> 2 </span>
+                                                        <h6> نانو سيراميك x2 </h6>
+                                                        <span class="price"> 200 ريال </span>
+                                                    </div>
+                                                    <div class="sub">
+                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <button class="customBtn"> الغاء الطلب </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -123,16 +180,98 @@
                                 <div class="accordion-item">
                                     <div class="accordion-button  collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#order2">
-                                        <div class="shortData">
-                                            <div class="orderHead"></div>
-                                            <div class="date"></div>
-                                            <div class="status"></div>
+                                        <div class="shortData shipped">
+                                            <div class="orderHead">
+                                                <p class="line">
+                                                    رقم الطلب : <span> 1092032 </span>
+                                                </p>
+                                                <p class="line highlight">
+                                                    سعر الطلب : <span> 500 ريال </span>
+                                                </p>
+                                                <p class="line">
+                                                    تاريخ الطلب : <span> 2024/5/12 </span>
+                                                </p>
+                                            </div>
+                                            <div class="date">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/date.svg" alt="">
+                                                    2024/2/2
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/time.svg" alt="">
+                                                    10 : 30 AM
+                                                </div>
+                                                <div class="progressBar" data-value="50">
+                                                    <div class="progressLine"></div>
+                                                </div>
+                                            </div>
+                                            <div class="status">
+                                                تم شحن الطلب
+                                                <div class="icon">
+                                                    <img src="img/icons/shipped.svg" alt="">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div id="order2" class="accordion-collapse collapse"
                                         data-bs-parent="#ordersAccordion">
-                                        <div class="accordion-body">
-                                            This is the first item's accordion body.
+                                        <div class="accordion-body row">
+                                            <div class="col-md-6 p-2">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/orderID.svg" alt="">
+                                                    <div class="text"> رقم الطلب <span> 1092032 </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/payment.svg" alt="">
+                                                    <div class="text"> طرق الدفع <span> بطاقات الائتمان </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/location.svg" alt="">
+                                                    <div class="text"> العنوان <span> السعوديه / الرياض/ شارع فيصل
+                                                        </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/money.svg" alt="">
+                                                    <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 p-2">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/money.svg" alt="">
+                                                    <div class="text"> تفاصيل الطلب </div>
+                                                </div>
+                                                <div class="orderDetails">
+                                                    <div class="main">
+                                                        <span class="num"> 1</span>
+                                                        <h6> نانو سيراميك x2 </h6>
+                                                        <span class="price"> 200 ريال </span>
+                                                    </div>
+                                                    <div class="sub">
+                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="orderDetails">
+                                                    <div class="main">
+                                                        <span class="num"> 2 </span>
+                                                        <h6> نانو سيراميك x2 </h6>
+                                                        <span class="price"> 200 ريال </span>
+                                                    </div>
+                                                    <div class="sub">
+                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <button class="customBtn"> الغاء الطلب </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -140,16 +279,98 @@
                                 <div class="accordion-item">
                                     <div class="accordion-button  collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#order3">
-                                        <div class="shortData">
-                                            <div class="orderHead"></div>
-                                            <div class="date"></div>
-                                            <div class="status"></div>
+                                        <div class="shortData delivered">
+                                            <div class="orderHead">
+                                                <p class="line">
+                                                    رقم الطلب : <span> 1092032 </span>
+                                                </p>
+                                                <p class="line highlight">
+                                                    سعر الطلب : <span> 500 ريال </span>
+                                                </p>
+                                                <p class="line">
+                                                    تاريخ الطلب : <span> 2024/5/12 </span>
+                                                </p>
+                                            </div>
+                                            <div class="date">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/date.svg" alt="">
+                                                    2024/2/2
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/time.svg" alt="">
+                                                    10 : 30 AM
+                                                </div>
+                                                <div class="progressBar" data-value="100">
+                                                    <div class="progressLine"></div>
+                                                </div>
+                                            </div>
+                                            <div class="status">
+                                                تم اكتمال الطلب
+                                                <div class="icon">
+                                                    <img src="img/icons/delivered.svg" alt="">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div id="order3" class="accordion-collapse collapse"
                                         data-bs-parent="#ordersAccordion">
-                                        <div class="accordion-body">
-                                            This is the first item's accordion body.
+                                        <div class="accordion-body row">
+                                            <div class="col-md-6 p-2">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/orderID.svg" alt="">
+                                                    <div class="text"> رقم الطلب <span> 1092032 </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/payment.svg" alt="">
+                                                    <div class="text"> طرق الدفع <span> بطاقات الائتمان </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/location.svg" alt="">
+                                                    <div class="text"> العنوان <span> السعوديه / الرياض/ شارع فيصل
+                                                        </span> </div>
+                                                </div>
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/money.svg" alt="">
+                                                    <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 p-2">
+                                                <div class="info">
+                                                    <img class="icon" src="img/icons/money.svg" alt="">
+                                                    <div class="text"> تفاصيل الطلب </div>
+                                                </div>
+                                                <div class="orderDetails">
+                                                    <div class="main">
+                                                        <span class="num"> 1</span>
+                                                        <h6> نانو سيراميك x2 </h6>
+                                                        <span class="price"> 200 ريال </span>
+                                                    </div>
+                                                    <div class="sub">
+                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="orderDetails">
+                                                    <div class="main">
+                                                        <span class="num"> 2 </span>
+                                                        <h6> نانو سيراميك x2 </h6>
+                                                        <span class="price"> 200 ريال </span>
+                                                    </div>
+                                                    <div class="sub">
+                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <button class="customBtn"> الغاء الطلب </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -257,4 +478,5 @@
     <!-- custom -->
     <script src="js/custom.js"></script>
 </body>
+
 </html>

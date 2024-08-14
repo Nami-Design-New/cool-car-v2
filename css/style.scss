@@ -4,6 +4,7 @@
   --mainColor05: #de01010d;
   --whiteColor: #ffffff;
   --darkColor: #0a0a0b;
+  --darkColor2: #141416;
   --lightDarkColor: #1a1818;
   --lightGrayColor: #888b91;
   --lightBorderColor: #e1e1e1;
@@ -456,7 +457,8 @@ footer {
           box-shadow: none;
           border-radius: 24px;
           gap: 16px;
-          &::after{
+          padding: 24px;
+          &::after {
             filter: brightness(0) invert(1);
           }
           .shortData {
@@ -487,27 +489,28 @@ footer {
                 }
               }
             }
-            .date{
+            .date {
               display: flex;
               flex-wrap: wrap;
               gap: 8px 24px;
-              .info{
+              .info {
                 display: flex;
                 align-items: center;
                 gap: 8px;
                 color: var(--whiteColor);
-                .icon{
+                .icon {
                   width: 20px;
                   aspect-ratio: 1;
                   object-fit: contain;
                 }
               }
-              .progressBar{
-                height: 8px;
+              .progressBar {
+                height: 4px;
                 width: 100%;
                 background-color: var(--lightDarkColor);
                 border-radius: 100px;
-                .progressLine{
+
+                .progressLine {
                   width: 100%;
                   height: 100%;
                   background-color: var(--mainColor);
@@ -515,12 +518,12 @@ footer {
                 }
               }
             }
-            .status{
+            .status {
               display: flex;
               align-items: center;
               color: var(--whiteColor);
               gap: 12px;
-              .icon{
+              .icon {
                 width: 64px;
                 aspect-ratio: 1;
                 display: flex;
@@ -528,10 +531,30 @@ footer {
                 justify-content: center;
                 border-radius: 100px;
                 background-color: var(--mainColor20);
-                img{
+                img {
                   width: 20px;
                   height: 20px;
                   object-fit: contain;
+                }
+              }
+            }
+            &.shipped {
+              .date .progressBar .progressLine {
+                background-color: #b67c00;
+              }
+              .status {
+                .icon {
+                  background-color: #b67c0033;
+                }
+              }
+            }
+            &.delivered {
+              .date .progressBar .progressLine {
+                background-color: #00b67c;
+              }
+              .status {
+                .icon {
+                  background-color: #00b67c33;
                 }
               }
             }
@@ -539,6 +562,72 @@ footer {
         }
         .accordion-body {
           border: none;
+          padding: 0 24px 24px;
+          background-color: var(--darkColor2);
+          border-radius: 24px;
+          .info {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            padding: 8px;
+            .icon {
+              width: 20px;
+              aspect-ratio: 1;
+              object-fit: contain;
+            }
+            .text {
+              display: flex;
+              flex-direction: column;
+              color: var(--lightGrayColor);
+              span {
+                color: var(--whiteColor);
+              }
+            }
+          }
+          .orderDetails {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+            gap: 8px;
+            .main {
+              display: flex;
+              gap: 16px;
+              align-items: center;
+              padding-bottom: 8px;
+              border-bottom: 1px solid var(--mainColor20);
+
+              .num {
+                padding: 8px;
+                background-color: var(--mainColor20);
+                border-radius: 100px;
+                color: var(--mainColor);
+                font-weight: bold;
+                font-size: 16px;
+                height: 32px;
+                width: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              h6 {
+                flex: 1;
+              }
+              .price {
+                color: var(--mainColor);
+              }
+            }
+            .sub {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              p {
+                color: var(--lightGrayColor);
+                span {
+                  color: var(--whiteColor);
+                }
+              }
+            }
+          }
         }
       }
     }
