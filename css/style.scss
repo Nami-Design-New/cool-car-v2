@@ -651,15 +651,15 @@ footer {
         flex-direction: column;
         gap: 24px;
         white-space: nowrap;
-        .head{
+        .head {
           display: flex;
           align-items: center;
           gap: 48px;
           .text {
             color: var(--whiteColor);
             flex: 1;
-            h2{
-              span{
+            h2 {
+              span {
                 font-weight: bold;
                 border-bottom: 1px solid var(--whiteColor);
               }
@@ -671,7 +671,6 @@ footer {
             object-fit: contain;
             filter: brightness(0) invert(1);
           }
-
         }
         .user {
           display: flex;
@@ -684,28 +683,28 @@ footer {
           }
         }
       }
-      .history{
+      .history {
         display: flex;
         flex-direction: column;
         gap: 8px;
         flex: 1;
         padding: 16px;
-        .line{
+        .line {
           display: flex;
           align-items: center;
           gap: 8px;
           color: var(--lightBorderColor);
-          .price{
+          .price {
             color: var(--mainColor);
             font-weight: bold;
           }
-          .status{
+          .status {
             flex: 1;
           }
-          .date{
+          .date {
             flex: 1;
           }
-          img{
+          img {
             width: 20px;
             aspect-ratio: 1;
             object-fit: contain;
@@ -713,28 +712,28 @@ footer {
           }
         }
       }
-      .chargeWallet{
+      .chargeWallet {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        .head{
+        .head {
           display: flex;
           align-items: center;
           gap: 8px;
-          .icon{
+          .icon {
             width: 20px;
             aspect-ratio: 1;
             object-fit: contain;
           }
         }
-        form{
+        form {
           display: flex;
           gap: 8px;
           background-color: var(--darkColor);
           padding: 16px;
           border-radius: 16px;
           width: calc(100% - 46px);
-          .charge{
+          .charge {
             flex: 1;
             background-color: var(--lightDarkColor);
             display: flex;
@@ -742,12 +741,12 @@ footer {
             align-items: center;
             border-radius: 16px;
             gap: 8px;
-            .icon{
+            .icon {
               width: 20px;
               aspect-ratio: 1;
               object-fit: contain;
             }
-            input{
+            input {
               background-color: transparent;
               border: none;
               outline: none;
@@ -755,7 +754,7 @@ footer {
               color: var(--whiteColor);
             }
           }
-          .btn{
+          .btn {
             display: flex;
             align-items: center;
             flex: 1;
@@ -767,34 +766,33 @@ footer {
             gap: 8px;
             transform: translateX(-60px);
             justify-content: center;
-            img{
+            img {
               width: 20px;
               aspect-ratio: 1;
               object-fit: contain;
               transform: scaleX(-1);
             }
           }
-          
         }
       }
     }
 
-    .notifications{
+    .notifications {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      .single{
+      .single {
         display: flex;
         flex-direction: column;
         gap: 4px;
         background-color: var(--darkColor);
         padding: 24px;
         border-radius: 20px;
-        .title{
+        .title {
           font-weight: bold;
         }
-        
-        .time{
+
+        .time {
           color: var(--lightGrayColor);
         }
       }
@@ -846,6 +844,7 @@ footer {
   overflow: hidden;
   transition: var(--transition);
   background-color: #000;
+  border: 1px solid var(--mainColor);
   &::after {
     position: absolute;
     content: "";
@@ -935,5 +934,144 @@ footer {
     font-size: 18px;
     font-weight: bold;
     border-radius: 8px;
+  }
+}
+.cart {
+  padding: 80px 0;
+  .pageHead {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .sideCart {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--lightDarkColor);
+    .title {
+      font-weight: bold;
+      text-align: center;
+    }
+    .summary{
+      display: flex;
+      flex-direction: column;
+      padding: 8px 0;
+      gap: 8px;
+      .item{
+        display: flex;
+        gap: 8px;
+        .info{
+          flex: 1;
+        }
+        .price{
+          white-space: nowrap;
+          color: var(--mainColor);
+        }
+      }
+    }
+    .hint{
+      color: var(--lightGrayColor);
+      text-align: center;
+    }
+  }
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--lightDarkColor);
+    position: relative;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .delete {
+      position: absolute;
+      z-index: 2;
+      top: -12px;
+      right: -24px;
+      width: 40px;
+      aspect-ratio: 1;
+      background-color: var(--darkColor2);
+      box-shadow: var(--shadow);
+      border-radius: 100px;
+      outline: 8px solid var(--darkColor);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 20px;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+    }
+    .head {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      .itemImg {
+        width: 80px;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex: 1;
+        .price {
+          color: var(--mainColor);
+        }
+      }
+      .quantity {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: var(--darkColor);
+        border-radius: 100px;
+        height: fit-content;
+        .min,
+        .plus {
+          font-size: 18px;
+          font-weight: bold;
+          width: 40px;
+          aspect-ratio: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--mainColor);
+          color: var(--whiteColor);
+          border-radius: 100px;
+          box-shadow: var(--shadow);
+        }
+        input {
+          background: transparent;
+          color: white;
+          border: none;
+          width: 40px;
+          text-align: center;
+        }
+      }
+      .totalPrice {
+        color: var(--mainColor);
+        font-weight: bold;
+      }
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      select {
+        background-color: var(--darkColor);
+        color: var(--whiteColor);
+        border: 1px solid var(--darkColor2);
+        border-radius: 12px;
+      }
+      .formGroup label .icon {
+        filter: none;
+      }
+    }
   }
 }
