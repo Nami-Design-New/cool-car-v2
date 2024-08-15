@@ -202,11 +202,6 @@ footer::before {
   right: 0;
   z-index: -1;
 }
-@media screen and (max-width: 768px) {
-  footer {
-    display: none;
-  }
-}
 footer .logo {
   max-height: 40px;
   width: 100%;
@@ -453,6 +448,19 @@ footer .group ul li a:hover {
 .profile .sideProfile .link.last {
   margin-top: auto;
 }
+@media screen and (max-width: 768px) {
+  .profile .sideProfile {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+  .profile .sideProfile .link {
+    width: calc(50% - 8px);
+  }
+  .profile .sideProfile .link .icon {
+    width: 40px;
+  }
+}
 .profile .contentProfile {
   display: flex;
   flex-direction: column;
@@ -504,6 +512,7 @@ footer .group ul li a:hover {
   display: flex;
   gap: 24px 40px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .profile .contentProfile .orders .accordion-item .accordion-button .shortData .date,
 .profile .contentProfile .orders .accordion-item .accordion-button .shortData .orderHead .status {
@@ -820,6 +829,17 @@ footer .group ul li a:hover {
 .profile .contentProfile .notifications .single .time {
   color: var(--lightGrayColor);
 }
+@media screen and (max-width: 768px) {
+  .profile .contentProfile {
+    padding: 12px;
+  }
+  .profile .contentProfile .chargeWallet form {
+    width: 100% !important;
+  }
+  .profile .contentProfile .chargeWallet form .btn {
+    transform: unset !important;
+  }
+}
 
 .formGroup {
   display: flex;
@@ -1014,7 +1034,7 @@ footer .group ul li a:hover {
   border-radius: 24px;
   background-color: var(--lightDarkColor);
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 .cart .cartItem:last-child {
   margin-bottom: 0;
@@ -1022,8 +1042,8 @@ footer .group ul li a:hover {
 .cart .cartItem .delete {
   position: absolute;
   z-index: 2;
-  top: -12px;
-  right: -24px;
+  top: -24px;
+  right: -12px;
   width: 40px;
   aspect-ratio: 1;
   background-color: var(--darkColor2);
@@ -1056,6 +1076,7 @@ footer .group ul li a:hover {
   flex-direction: column;
   gap: 8px;
   flex: 1;
+  min-width: 200px;
 }
 .cart .cartItem .head .info .price {
   color: var(--mainColor);
@@ -1107,4 +1128,38 @@ footer .group ul li a:hover {
 }
 .cart .cartItem .options .formGroup label .icon {
   filter: none;
+}
+
+.checkout {
+  padding: 80px 0;
+}
+.checkout .pageHead {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 13px;
+  }
+  body,
+  span,
+  p {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */

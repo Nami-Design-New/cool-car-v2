@@ -183,10 +183,6 @@ footer {
     right: 0;
     z-index: -1;
   }
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
   .logo {
     max-height: 40px;
     width: 100%;
@@ -423,6 +419,18 @@ footer {
         margin-top: auto;
       }
     }
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12px;
+      .link {
+        width: calc(50% - 8px);
+        .icon{
+          width: 40px;
+
+        }
+      }
+    }
   }
   .contentProfile {
     display: flex;
@@ -470,6 +478,7 @@ footer {
             display: flex;
             gap: 24px 40px;
             width: 100%;
+            flex-wrap: wrap;
             .date,
             .orderHead .status {
               flex: 1;
@@ -797,6 +806,18 @@ footer {
         }
       }
     }
+    @media screen and (max-width: 768px) {
+      padding: 12px;
+    
+      .chargeWallet{
+        form{
+          width: 100% !important;
+          .btn{
+            transform: unset !important;
+          }
+        }
+      }
+    }
   }
 }
 .formGroup {
@@ -983,15 +1004,15 @@ footer {
     border-radius: 24px;
     background-color: var(--lightDarkColor);
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     &:last-child {
       margin-bottom: 0;
     }
     .delete {
       position: absolute;
       z-index: 2;
-      top: -12px;
-      right: -24px;
+      top: -24px;
+      right: -12px;
       width: 40px;
       aspect-ratio: 1;
       background-color: var(--darkColor2);
@@ -1021,6 +1042,7 @@ footer {
         flex-direction: column;
         gap: 8px;
         flex: 1;
+        min-width: 200px;
         .price {
           color: var(--mainColor);
         }
@@ -1073,5 +1095,40 @@ footer {
         filter: none;
       }
     }
+  }
+}
+
+.checkout{
+  padding: 80px 0;
+  .pageHead {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 34px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 19px;
+  }
+  h4{
+    font-size: 17px;
+  }
+  h5{
+    font-size: 15px;
+  }
+  h6{
+    font-size: 13px;
+  } 
+  body,
+  span,
+  
+  p{
+    font-size: 13px;
   }
 }
