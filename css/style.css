@@ -486,187 +486,6 @@ footer .group ul li a:hover {
 .profile .contentProfile .cardForm .des span {
   color: var(--mainColor);
 }
-.profile .contentProfile .orders {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.profile .contentProfile .orders .accordion-item {
-  background-color: var(--darkColor);
-  box-shadow: var(--shadow);
-  border: none;
-  border-radius: 24px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button {
-  background-color: var(--darkColor);
-  border: none;
-  box-shadow: none;
-  border-radius: 24px;
-  gap: 16px;
-  padding: 24px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button::after {
-  filter: brightness(0) invert(1);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData {
-  display: flex;
-  gap: 24px 40px;
-  width: 100%;
-  flex-wrap: wrap;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .date,
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .orderHead .status {
-  flex: 1;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .orderHead {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .orderHead .line {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--lightGrayColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .orderHead .line span {
-  font-weight: bold;
-  color: var(--whiteColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .orderHead .line.highlight span {
-  color: var(--mainColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .date {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 24px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .date .info {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--whiteColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .date .info .icon {
-  width: 20px;
-  aspect-ratio: 1;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .date .progressBar {
-  height: 4px;
-  width: 100%;
-  background-color: var(--lightDarkColor);
-  border-radius: 100px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .date .progressBar .progressLine {
-  width: 100%;
-  height: 100%;
-  background-color: var(--mainColor);
-  border-radius: 100px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .status {
-  display: flex;
-  align-items: center;
-  color: var(--whiteColor);
-  gap: 12px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .status .icon {
-  width: 64px;
-  aspect-ratio: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  background-color: var(--mainColor20);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData .status .icon img {
-  width: 20px;
-  height: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData.shipped .date .progressBar .progressLine {
-  background-color: #b67c00;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData.shipped .status .icon {
-  background-color: rgba(182, 124, 0, 0.2);
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData.delivered .date .progressBar .progressLine {
-  background-color: #00b67c;
-}
-.profile .contentProfile .orders .accordion-item .accordion-button .shortData.delivered .status .icon {
-  background-color: rgba(0, 182, 124, 0.2);
-}
-.profile .contentProfile .orders .accordion-item .accordion-body {
-  border: none;
-  padding: 0 24px 24px;
-  background-color: var(--darkColor2);
-  border-radius: 24px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .info {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  padding: 8px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .info .icon {
-  width: 20px;
-  aspect-ratio: 1;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .info .text {
-  display: flex;
-  flex-direction: column;
-  color: var(--lightGrayColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .info .text span {
-  color: var(--whiteColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-  gap: 8px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--mainColor20);
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main .num {
-  padding: 8px;
-  background-color: var(--mainColor20);
-  border-radius: 100px;
-  color: var(--mainColor);
-  font-weight: bold;
-  font-size: 16px;
-  height: 32px;
-  width: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main h6 {
-  flex: 1;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .main .price {
-  color: var(--mainColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub p {
-  color: var(--lightGrayColor);
-}
-.profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub p span {
-  color: var(--whiteColor);
-}
 .profile .contentProfile .wallet {
   display: flex;
   gap: 24px;
@@ -841,6 +660,204 @@ footer .group ul li a:hover {
   }
 }
 
+.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.orders .accordion-item {
+  background-color: var(--darkColor);
+  box-shadow: var(--shadow);
+  border: none;
+  border-radius: 24px;
+}
+.orders .accordion-item .accordion-button {
+  background-color: var(--darkColor);
+  border: none;
+  box-shadow: none;
+  border-radius: 24px;
+  gap: 16px;
+  padding: 24px;
+}
+.orders .accordion-item .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+.orders .accordion-item .accordion-button .shortData {
+  display: flex;
+  gap: 24px 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.orders .accordion-item .accordion-button .shortData .date,
+.orders .accordion-item .accordion-button .shortData .orderHead .status {
+  flex: 1;
+}
+.orders .accordion-item .accordion-button .shortData .orderHead {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.orders .accordion-item .accordion-button .shortData .orderHead .line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lightGrayColor);
+}
+.orders .accordion-item .accordion-button .shortData .orderHead .line span {
+  font-weight: bold;
+  color: var(--whiteColor);
+}
+.orders .accordion-item .accordion-button .shortData .orderHead .line.highlight span {
+  color: var(--mainColor);
+}
+.orders .accordion-item .accordion-button .shortData .date {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.orders .accordion-item .accordion-button .shortData .date .info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--whiteColor);
+}
+.orders .accordion-item .accordion-button .shortData .date .info .icon {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.orders .accordion-item .accordion-button .shortData .date .progressBar {
+  height: 4px;
+  width: 100%;
+  background-color: var(--lightDarkColor);
+  border-radius: 100px;
+}
+.orders .accordion-item .accordion-button .shortData .date .progressBar .progressLine {
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainColor);
+  border-radius: 100px;
+}
+.orders .accordion-item .accordion-button .shortData .status {
+  display: flex;
+  align-items: center;
+  color: var(--whiteColor);
+  gap: 12px;
+}
+.orders .accordion-item .accordion-button .shortData .status .icon {
+  width: 64px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: var(--mainColor20);
+}
+.orders .accordion-item .accordion-button .shortData .status .icon img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.orders .accordion-item .accordion-button .shortData.shipped .date .progressBar .progressLine {
+  background-color: #b67c00;
+}
+.orders .accordion-item .accordion-button .shortData.shipped .status .icon {
+  background-color: rgba(182, 124, 0, 0.2);
+}
+.orders .accordion-item .accordion-button .shortData.delivered .date .progressBar .progressLine {
+  background-color: #00b67c;
+}
+.orders .accordion-item .accordion-button .shortData.delivered .status .icon {
+  background-color: rgba(0, 182, 124, 0.2);
+}
+.orders .accordion-item .accordion-button .checkoutTotal {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex: 1;
+}
+.orders .accordion-item .accordion-button .checkoutTotal .title {
+  font-weight: bold;
+}
+.orders .accordion-item .accordion-button .checkoutTotal .price {
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.orders .accordion-item .accordion-button:has(.checkoutTotal) {
+  background-color: var(--lightDarkColor);
+}
+.orders .accordion-item .accordion-body {
+  border: none;
+  padding: 0 24px 24px;
+  background-color: var(--darkColor2);
+  border-radius: 24px;
+}
+.orders .accordion-item .accordion-body .info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px;
+}
+.orders .accordion-item .accordion-body .info .icon {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.orders .accordion-item .accordion-body .info .text {
+  display: flex;
+  flex-direction: column;
+  color: var(--lightGrayColor);
+}
+.orders .accordion-item .accordion-body .info .text span {
+  color: var(--whiteColor);
+}
+.orders .accordion-item .accordion-body .orderDetails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+.orders .accordion-item .accordion-body .orderDetails .main {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--mainColor20);
+}
+.orders .accordion-item .accordion-body .orderDetails .main .num {
+  padding: 8px;
+  background-color: var(--mainColor20);
+  border-radius: 100px;
+  color: var(--mainColor);
+  font-weight: bold;
+  font-size: 16px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orders .accordion-item .accordion-body .orderDetails .main h6 {
+  flex: 1;
+}
+.orders .accordion-item .accordion-body .orderDetails .main .price {
+  color: var(--mainColor);
+}
+.orders .accordion-item .accordion-body .orderDetails .sub {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.orders .accordion-item .accordion-body .orderDetails .sub p {
+  color: var(--lightGrayColor);
+}
+.orders .accordion-item .accordion-body .orderDetails .sub p span {
+  color: var(--whiteColor);
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -858,8 +875,8 @@ footer .group ul li a:hover {
      object-fit: contain;
   filter: brightness(0) invert(1);
 }
-
-.form-control {
+.formGroup .form-select,
+.formGroup .form-control {
   background-color: var(--darkColor);
   border: none;
   min-height: 56px;
@@ -867,7 +884,8 @@ footer .group ul li a:hover {
   color: var(--whiteColor) !important;
   direction: rtl !important;
 }
-.form-control:focus {
+.formGroup .form-select:focus,
+.formGroup .form-control:focus {
   background-color: #000;
 }
 
@@ -1136,6 +1154,115 @@ footer .group ul li a:hover {
 .checkout .pageHead {
   text-align: center;
   margin-bottom: 40px;
+}
+.checkout .shipping {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--lightDarkColor);
+}
+.checkout .shipping .head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.checkout .shipping .head .title {
+  font-weight: bold;
+}
+.checkout .shipping .head .des {
+  color: var(--lightGrayColor);
+}
+.checkout .shipping .addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.checkout .shipping .btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.checkout .shipping .btn-group .location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--darkColor);
+  border: 1px solid var(--darkColor2);
+  padding: 8px;
+  border-radius: 12px;
+}
+.checkout .shipping .btn-group .location .controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+.checkout .shipping .btn-group .location .controls .btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.checkout .shipping .btn-group .location .controls .btn img {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.checkout .shipping .btn-group .location p {
+  flex: 1;
+  min-width: 100px;
+}
+.checkout .shipping .btn-group .location:has(input:checked) {
+  border-color: var(--mainColor);
+  color: var(--mainColor);
+}
+.checkout .payment {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--lightDarkColor);
+}
+.checkout .payment .head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.checkout .payment .head .title {
+  font-weight: bold;
+}
+.checkout .payment .head .des {
+  color: var(--lightGrayColor);
+}
+.checkout .payment .btn-group {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.checkout .payment .btn-group .pay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  padding: 8px;
+  border-radius: 8px;
+}
+.checkout .payment .btn-group .pay img {
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.checkout .payment .btn-group .pay input {
+  display: none;
+}
+.checkout .payment .btn-group .pay:has(input:checked) {
+  border-color: var(--mainColor);
+  color: var(--mainColor);
 }
 
 @media screen and (max-width: 768px) {

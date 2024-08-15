@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -22,6 +23,7 @@
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
     <!-- ================  header ================= -->
     <header>
@@ -35,10 +37,212 @@
                 <h1 class="pageHead"> عربه التسوق </h1>
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-xl-9 p-2">
-                        
+                        <!-- total -->
+                        <div class="accordion orders" id="ordersAccordion">
+                            <!-- accordion item -->
+                            <div class="accordion-item">
+                                <div class="accordion-button collapsed " data-bs-toggle="collapse"
+                                    data-bs-target="#order1">
+                                    <div class="checkoutTotal">
+                                        <h5 class="title"> اجمالي الفاتوره </h5>
+                                        <span class="price"> 200 ريال </span>
+                                    </div>
+                                </div>
+                                <div id="order1" class="accordion-collapse collapse" data-bs-parent="#ordersAccordion">
+                                    <div class="accordion-body ">
+                                        <div class="info">
+                                            <img class="icon" src="img/icons/money.svg" alt="">
+                                            <div class="text"> تفاصيل الطلب </div>
+                                        </div>
+                                        <div class="orderDetails">
+                                            <div class="main">
+                                                <span class="num"> 1</span>
+                                                <h6> نانو سيراميك x2 </h6>
+                                                <span class="price"> 200 ريال </span>
+                                            </div>
+                                            <div class="sub">
+                                                <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="orderDetails">
+                                            <div class="main">
+                                                <span class="num"> 2 </span>
+                                                <h6> نانو سيراميك x2 </h6>
+                                                <span class="price"> 200 ريال </span>
+                                            </div>
+                                            <div class="sub">
+                                                <p> زجاج امامي : <span> شفاف اسود </span> </p>
+                                                <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
+                                                <p> زجاج يسار : <span> شفاف ابيض </span> </p>
+                                                <p> زجاج خلفي : <span> شفاف ملون </span> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- shipping -->
+                        <div class="shipping">
+                            <div class="head">
+                                <h5 class="title"> عنوان الشحن </h5>
+                                <p class="des"> حدِّد عنوان استلام الطلب، واحرص على صحة بيانات الموقع </p>
+                            </div>
+                            <form class="addresses">
+                                <h6 class="title"> عناوينك </h6>
+                                <div class="btn-group">
+                                    <label class="location" for="location1">
+                                        <input type="radio" class="me-2" name="Choice" id="location1" checked />
+                                        <p>
+                                            السعوديه ، الرياض ، فيلا ١٤
+                                        </p>
+                                        <div class="controls">
+                                            <button type="button" class="btn">
+                                                <img src="img/icons/delete.svg" alt="">
+                                            </button>
+                                            <button type="button" class="btn">
+                                                <img src="img/icons/edit.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </label>
+                                    <label class="location" for="location2">
+                                        <input type="radio" name="Choice" id="location2" />
+                                        <p>
+                                            السعوديه ، الرياض ، فيلا ١٤
+                                        </p>
+                                        <div class="controls">
+                                            <button type="button" class="btn">
+                                                <img src="img/icons/delete.svg" alt="">
+                                            </button>
+                                            <button type="button" class="btn">
+                                                <img src="img/icons/edit.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </label>
+                                    <label class="location" for="location3">
+                                        <input type="radio" name="Choice" id="location3" />
+                                        <p>
+                                            السعوديه ، الرياض ، فيلا ١٤
+                                        </p>
+                                        <div class="controls">
+                                            <button type="button" class="btn">
+                                                <img src="img/icons/delete.svg" alt="">
+                                            </button>
+                                            <button type="button" class="btn">
+                                                <img src="img/icons/edit.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark p-3 my-3" data-bs-toggle="modal"
+                                    data-bs-target="#modalId">
+                                    حداد عنوان من الخريطه
+                                </button>
+                                <div class="row">
+                                    <div class="col-md-6 p-2">
+                                        <div class="formGroup">
+                                            <label for="country"> اختر الدولة </label>
+                                            <select class="form-select" name="country" id="country">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <div class="formGroup">
+                                            <label for="city"> اختر المدينه </label>
+                                            <select class="form-select" name="city" id="city">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <div class="formGroup">
+                                            <label for="district"> الحي </label>
+                                            <input type="text" class="form-control" name="district" id="district">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <div class="formGroup">
+                                            <label for="street"> الشارع </label>
+                                            <input type="text" class="form-control" name="street" id="street">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <div class="formGroup">
+                                            <label for="zip"> الرمز البريدي </label>
+                                            <input type="number" class="form-control" name="zip" id="zip">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <div class="formGroup">
+                                            <label for="des"> وصف البيت (اختياري) </label>
+                                            <textarea class="form-control" name="des" id="des" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="customBtn" type="submit"> تاكيد </button>
+                            </form>
+                        </div>
+                        <!-- payment -->
+                        <div class="payment">
+                            <div class="head">
+                                <h5 class="title"> الدفع </h5>
+                                <p class="des"> دفع إلكتروني آمن 100% </p>
+                            </div>
+                            <div class="btn-group">
+                                <label class="pay" for="pay1">
+                                    <input type="radio" class="me-2" name="Choice" id="pay1" checked />
+                                    <img src="img/icons/visa.svg" alt="">
+                                   
+                                </label>
+                                <label class="pay" for="pay2">
+                                    <input type="radio" name="Choice" id="pay2" />
+                                    <img src="img/icons/applePay.svg" alt="">
+                                   
+                                </label>
+                                <label class="pay" for="pay3">
+                                    <input type="radio" name="Choice" id="pay3" />
+                                    <img src="img/icons/walletPay.svg" alt="">
+                                   
+                                </label>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Modal title
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">Add rows here</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </content>
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((( / content )))))))))))))))))))-->
@@ -137,4 +341,5 @@
     <!-- custom -->
     <script src="js/custom.js"></script>
 </body>
+
 </html>
