@@ -1234,6 +1234,16 @@ footer {
   }
 }
 
+#mapView {
+  height: 250px;
+  border-radius: 16px;
+  .gm-style-cc {
+    display: none;
+  }
+  overflow: hidden;
+}
+
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 34px;

@@ -1265,6 +1265,15 @@ footer .group ul li a:hover {
   color: var(--mainColor);
 }
 
+#mapView {
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#mapView .gm-style-cc {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 34px;
