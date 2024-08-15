@@ -19,12 +19,6 @@
   font-display: swap;
   src: url(../webfonts/DINNextLTArabic-Regular.ttf);
 }
-@font-face {
-  font-family: "fontBold";
-  font-display: swap;
-  src: url(../webfonts/DINNextLTArabic-Bold.ttf);
-  font-weight: 900;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -663,6 +657,168 @@ footer .group ul li a:hover {
 }
 .profile .contentProfile .orders .accordion-item .accordion-body .orderDetails .sub p span {
   color: var(--whiteColor);
+}
+.profile .contentProfile .wallet {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.profile .contentProfile .wallet .Balance {
+  flex: 1;
+  background-color: var(--mainColor);
+  padding: 24px;
+  border-radius: 16px;
+  border-bottom-left-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  white-space: nowrap;
+}
+.profile .contentProfile .wallet .Balance .head {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.profile .contentProfile .wallet .Balance .head .text {
+  color: var(--whiteColor);
+  flex: 1;
+}
+.profile .contentProfile .wallet .Balance .head .text h2 span {
+  font-weight: bold;
+  border-bottom: 1px solid var(--whiteColor);
+}
+.profile .contentProfile .wallet .Balance .head .icon {
+  width: 48px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.profile .contentProfile .wallet .Balance .user {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--whiteColor);
+}
+.profile .contentProfile .wallet .Balance .user .name {
+  font-weight: bold;
+  line-height: 1;
+}
+.profile .contentProfile .wallet .history {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  padding: 16px;
+}
+.profile .contentProfile .wallet .history .line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lightBorderColor);
+}
+.profile .contentProfile .wallet .history .line .price {
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.profile .contentProfile .wallet .history .line .status {
+  flex: 1;
+}
+.profile .contentProfile .wallet .history .line .date {
+  flex: 1;
+}
+.profile .contentProfile .wallet .history .line img {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.profile .contentProfile .wallet .chargeWallet {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.profile .contentProfile .wallet .chargeWallet .head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile .contentProfile .wallet .chargeWallet .head .icon {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profile .contentProfile .wallet .chargeWallet form {
+  display: flex;
+  gap: 8px;
+  background-color: var(--darkColor);
+  padding: 16px;
+  border-radius: 16px;
+  width: calc(100% - 46px);
+}
+.profile .contentProfile .wallet .chargeWallet form .charge {
+  flex: 1;
+  background-color: var(--lightDarkColor);
+  display: flex;
+  padding: 0 24px;
+  align-items: center;
+  border-radius: 16px;
+  gap: 8px;
+}
+.profile .contentProfile .wallet .chargeWallet form .charge .icon {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profile .contentProfile .wallet .chargeWallet form .charge input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  color: var(--whiteColor);
+}
+.profile .contentProfile .wallet .chargeWallet form .btn {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+  border-radius: 16px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  gap: 8px;
+  transform: translateX(-60px);
+  justify-content: center;
+}
+.profile .contentProfile .wallet .chargeWallet form .btn img {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scaleX(-1);
+}
+.profile .contentProfile .notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.profile .contentProfile .notifications .single {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: var(--darkColor);
+  padding: 24px;
+  border-radius: 20px;
+}
+.profile .contentProfile .notifications .single .title {
+  font-weight: bold;
+}
+.profile .contentProfile .notifications .single .time {
+  color: var(--lightGrayColor);
 }
 
 .formGroup {
