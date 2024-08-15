@@ -1253,7 +1253,7 @@ footer .group ul li a:hover {
   border-radius: 8px;
 }
 .checkout .payment .btn-group .pay img {
-  height: 32px;
+  height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
 }
