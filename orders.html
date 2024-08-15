@@ -135,7 +135,6 @@
                                                     <img class="icon" src="img/icons/money.svg" alt="">
                                                     <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
                                                 </div>
-
                                             </div>
                                             <div class="col-md-6 p-2">
                                                 <div class="info">
@@ -168,7 +167,6 @@
                                                         <p> زجاج خلفي : <span> شفاف ملون </span> </p>
                                                     </div>
                                                 </div>
-
                                             </div>
                                             <div class="col-12 p-2">
                                                 <button class="customBtn"> الغاء الطلب </button>
@@ -234,7 +232,6 @@
                                                     <img class="icon" src="img/icons/money.svg" alt="">
                                                     <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
                                                 </div>
-
                                             </div>
                                             <div class="col-md-6 p-2">
                                                 <div class="info">
@@ -267,7 +264,6 @@
                                                         <p> زجاج خلفي : <span> شفاف ملون </span> </p>
                                                     </div>
                                                 </div>
-
                                             </div>
                                             <div class="col-12 p-2">
                                                 <button class="customBtn"> الغاء الطلب </button>
@@ -333,7 +329,6 @@
                                                     <img class="icon" src="img/icons/money.svg" alt="">
                                                     <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
                                                 </div>
-
                                             </div>
                                             <div class="col-md-6 p-2">
                                                 <div class="info">
@@ -366,14 +361,62 @@
                                                         <p> زجاج خلفي : <span> شفاف ملون </span> </p>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                          
+                                            <div class="col-12 p-2">
+                                                <!-- Button trigger modal -->
+                                                <button class="customBtn rate" data-bs-toggle="modal"
+                                                    data-bs-target="#rateModal"> تقييم </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+
+                        <div class="modal fade" id="rateModal" tabindex="-1"
+                            aria-labelledby="rateModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="rateModalLabel">قيم المنتجات</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="stars">
+                                                <div class="star-rating">
+                                                    <input type="radio" id="star5" name="rating" value="5" />
+                                                    <label for="star5" title="5 stars">
+                                                        <img src="img/icons/star.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" id="star4" name="rating" value="4" />
+                                                    <label for="star4" title="4 stars">
+                                                        <img src="img/icons/star.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" id="star3" name="rating" value="3" />
+                                                    <label for="star3" title="3 stars">
+                                                        <img src="img/icons/star.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" id="star2" name="rating" value="2" />
+                                                    <label for="star2" title="2 stars">
+                                                        <img src="img/icons/star.svg" alt="">
+                                                    </label>
+                                                    <input type="radio" id="star1" name="rating" value="1" />
+                                                    <label for="star1" title="1 star">
+                                                        <img src="img/icons/star.svg" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <textarea class="form-control" rows="8" placeholder="اكتب تجربتك"></textarea>
+                                            <button type="submit" class="customBtn mt-4">ارسال</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -475,6 +518,23 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+
+    <!-- products rate script -->
+    <script>
+        const radioInputs = document.querySelectorAll('.star-rating input');
+        const labels = document.querySelectorAll('.star-rating label');
+        radioInputs.forEach((input, index) => {
+            input.addEventListener('click', () => {
+                labels.forEach((label) => {
+                    label.classList.remove('active');
+                });
+                for (let i = 0; i <= index; i++) {
+                    labels[i].classList.add('active');
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
