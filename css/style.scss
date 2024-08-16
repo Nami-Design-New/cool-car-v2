@@ -82,7 +82,7 @@ p {
 @media (max-width: 768px) {
   .container,
   .container-fluid {
-    padding: 0px 8px;
+    padding: 0px 12px;
   }
 }
 video,
@@ -1529,6 +1529,11 @@ footer {
   }
 }
 header {
+  // position: sticky;
+  // top: 0;
+  // z-index: 999;
+  // background-color: var(--darkColor);
+  // padding-bottom: 12px;
   .navbar {
     .navbar-toggler {
       filter: invert(1);
@@ -1708,14 +1713,13 @@ header {
     }
   }
 }
-
+.products,
 .offers {
   padding: 40px 0;
   .swiper {
     padding-top: 20px;
   }
 }
-
 .productCard {
   display: flex;
   flex-direction: column;
@@ -1773,9 +1777,8 @@ header {
     }
   }
 }
-
 .trust {
-  padding: 80px 20px;
+  padding: 40px 20px;
   width: min(100% - 24px, 1320px);
   margin: auto;
   display: flex;
@@ -1799,5 +1802,60 @@ header {
       object-fit: contain;
       max-height: 100px;
     }
+  }
+}
+.banner {
+  margin: 40px 0;
+  padding: 40px 0;
+  background-size: cover;
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 400px;
+      .title {
+        font-weight: bold;
+      }
+      .des {
+        color: var(--grayColor);
+        text-wrap: balance;
+      }
+      .btn {
+        margin-top: 16px;
+        padding: 8px 24px;
+        color: var(--whiteColor);
+        background-color: var(--mainColor);
+        width: fit-content;
+      }
+    }
+    .bannerImg {
+      flex: 1;
+      object-fit: contain;
+      max-height: 250px;
+      object-position: left;
+    }
+  }
+}
+.contactUs {
+  padding: 60px 0;
+  .title {
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  form {
+    width: min(100% - 24px, 1000px);
+    background-color: var(--lightDarkColor);
+    padding: 24px;
+    margin: 0 auto;
+    border-radius: 24px;
+    border-top-left-radius: 40px;
   }
 }

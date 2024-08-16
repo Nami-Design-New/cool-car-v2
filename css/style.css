@@ -92,7 +92,7 @@ p {
 @media (max-width: 768px) {
   .container,
   .container-fluid {
-    padding: 0px 8px;
+    padding: 0px 12px;
   }
 }
 video,
@@ -1778,9 +1778,11 @@ header .mainLinks a.active {
   opacity: 1;
 }
 
+.products,
 .offers {
   padding: 40px 0;
 }
+.products .swiper,
 .offers .swiper {
   padding-top: 20px;
 }
@@ -1846,7 +1848,7 @@ header .mainLinks a.active {
 }
 
 .trust {
-  padding: 80px 20px;
+  padding: 40px 20px;
   width: min(100% - 24px, 1320px);
   margin: auto;
   display: flex;
@@ -1872,4 +1874,64 @@ header .mainLinks a.active {
   -o-object-fit: contain;
      object-fit: contain;
   max-height: 100px;
+}
+
+.banner {
+  margin: 40px 0;
+  padding: 40px 0;
+  background-size: cover;
+}
+.banner .container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.banner .container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+}
+.banner .container .text .title {
+  font-weight: bold;
+}
+.banner .container .text .des {
+  color: var(--grayColor);
+  text-wrap: balance;
+}
+.banner .container .text .btn {
+  margin-top: 16px;
+  padding: 8px 24px;
+  color: var(--whiteColor);
+  background-color: var(--mainColor);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.banner .container .bannerImg {
+  flex: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 250px;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.contactUs {
+  padding: 60px 0;
+}
+.contactUs .title {
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.contactUs form {
+  width: min(100% - 24px, 1000px);
+  background-color: var(--lightDarkColor);
+  padding: 24px;
+  margin: 0 auto;
+  border-radius: 24px;
+  border-top-left-radius: 40px;
 }/*# sourceMappingURL=style.css.map */
