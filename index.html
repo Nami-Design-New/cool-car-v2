@@ -57,11 +57,11 @@
                             </a>
                         </div>
                     </div>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="login.html">
                         <img class="icon" src="img/icons/user.svg" alt="">
                         تسجيل دخول
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="cart.html">
                         <img class="icon" src="img/icons/cart.svg" alt="">
                         السله (0 ر.س)
                     </a>
@@ -91,6 +91,7 @@
     <!--((((((((((((((((((( content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <content>
+        <!-- hero -->
         <section class="hero">
             <h2 class="title"> ودع حراره الشمس، بقوه عزل خياليه </h2>
             <h4 class="subTitle"> <span> اطلب الان </span> و لاول ماره من المصنع للباب بيتك </h4>
@@ -99,6 +100,101 @@
                 ابدأ الآن
             </a>
         </section>
+        <!-- offers -->
+        <section class="offers">
+            <div class="container">
+                <div class="d-flex justify-content-between gap-2 w-100">
+                    <h2 class="pageTitle" data-aos="fade-up">
+                        العروض
+                    </h2>
+                    <div class="swiperControl" data-aos="fade-up">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiperBtns">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- swiper Slide -->
+                        <div class="swiper-slide">
+                            <div class="productCard" data-aos="fade-up">
+                                <a href="productDetails.html">
+                                    <img class="productImg" src="img/product.png" alt="">
+                                </a>
+                                <div class="content">
+                                    <div class="text">
+                                        <h4 class="price"> 2000 ر.س </h4>
+                                        <h5 class="title"> نانو سيراميك </h5>
+                                        <p class="desc"> عازل حراري يصل ال 80% </p>
+                                    </div>
+                                    <a href="productDetails.html" class="detailsBtn">
+                                        <img src="img/icons/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper Slide -->
+                        <div class="swiper-slide">
+                            <div class="productCard" data-aos="fade-up">
+                                <a href="productDetails.html">
+                                    <img class="productImg" src="img/product.png" alt="">
+                                </a>
+                                <div class="content">
+                                    <div class="text">
+                                        <h4 class="price"> 2000 ر.س </h4>
+                                        <h5 class="title"> نانو سيراميك </h5>
+                                        <p class="desc"> عازل حراري يصل ال 80% </p>
+                                    </div>
+                                    <a href="productDetails.html" class="detailsBtn">
+                                        <img src="img/icons/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper Slide -->
+                        <div class="swiper-slide">
+                            <div class="productCard" data-aos="fade-up">
+                                <a href="productDetails.html">
+                                    <img class="productImg" src="img/product.png" alt="">
+                                </a>
+                                <div class="content">
+                                    <div class="text">
+                                        <h4 class="price"> 2000 ر.س </h4>
+                                        <h5 class="title"> نانو سيراميك </h5>
+                                        <p class="desc"> عازل حراري يصل ال 80% </p>
+                                    </div>
+                                    <a href="productDetails.html" class="detailsBtn">
+                                        <img src="img/icons/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper Slide -->
+                        <div class="swiper-slide">
+                            <div class="productCard" data-aos="fade-up">
+                                <a href="productDetails.html">
+                                    <img class="productImg" src="img/product.png" alt="">
+                                </a>
+                                <div class="content">
+                                    <div class="text">
+                                        <h4 class="price"> 2000 ر.س </h4>
+                                        <h5 class="title"> نانو سيراميك </h5>
+                                        <p class="desc"> عازل حراري يصل ال 80% </p>
+                                    </div>
+                                    <a href="productDetails.html" class="detailsBtn">
+                                        <img src="img/icons/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </content>
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((( / content )))))))))))))))))))-->
@@ -196,6 +292,32 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+    <script>
+        var offersSlider = new Swiper(".offers .swiper", {
+            loop: true,
+            spaceBetween: 32,
+            pagination: {
+                el: ".offers .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".offers .swiper-button-next",
+                prevEl: ".offers .swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
