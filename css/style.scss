@@ -1686,9 +1686,25 @@ header {
       border-radius: 100px;
       border: 1px solid #00b67c;
     }
-    &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
       background-color: #00b67c;
+      z-index: -1;
+      opacity: 0;
+      transition: var(--transition);
+    }
+    &:hover {
       color: #fff;
+      &::before {
+        opacity: 1;
+      }
     }
   }
 }
@@ -1754,6 +1770,34 @@ header {
         aspect-ratio: 1;
         filter: brightness(0) invert(1);
       }
+    }
+  }
+}
+
+.trust {
+  padding: 80px 20px;
+  width: min(100% - 24px, 1320px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightDarkColor);
+    border-radius: 16px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    .title {
+      font-weight: bold;
+    }
+    img {
+      margin-top: 16px;
+      width: 100%;
+      object-fit: contain;
+      max-height: 100px;
     }
   }
 }
