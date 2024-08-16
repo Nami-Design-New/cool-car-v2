@@ -25,7 +25,7 @@
   padding: 0;
   outline: none;
   scroll-behavior: smooth;
-  direction: rtl;
+  direction: ltr;
 }
 
 ::-webkit-scrollbar {
@@ -188,7 +188,7 @@ footer::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  right: 0;
   z-index: -1;
 }
 footer::before {
@@ -199,7 +199,7 @@ footer::before {
   box-shadow: 0px 0px 500px 150px var(--mainColor);
   position: absolute;
   bottom: 0%;
-  right: 0;
+  left: 0;
   z-index: -1;
 }
 footer .logo {
@@ -207,8 +207,8 @@ footer .logo {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: right;
-     object-position: right;
+  -o-object-position: left;
+     object-position: left;
   margin-bottom: 16px;
   filter: brightness(0) invert(1);
 }
@@ -278,7 +278,7 @@ footer .social a .icon img {
   filter: brightness(0) invert(1);
 }
 footer .social a:hover {
-  margin-right: 8px;
+  margin-left: 8px;
 }
 footer .group {
   display: flex;
@@ -370,7 +370,7 @@ footer .group ul li a:hover {
 .uploadImage span {
   position: absolute;
   bottom: 4px;
-  left: 12px;
+  right: 12px;
   background-color: var(--whiteColor);
   border-radius: 100%;
   pointer-events: none;
@@ -399,7 +399,7 @@ footer .group ul li a:hover {
 }
 .uploadImage.wide span {
   bottom: -4px;
-  left: -4px;
+  right: -4px;
 }
 
 .profile {
@@ -497,7 +497,7 @@ footer .group ul li a:hover {
   background-color: var(--mainColor);
   padding: 24px;
   border-radius: 16px;
-  border-bottom-left-radius: 48px;
+  border-bottom-right-radius: 48px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -617,10 +617,10 @@ footer .group ul li a:hover {
   color: var(--whiteColor);
   background-color: var(--mainColor);
   border-radius: 16px;
-  border-bottom-left-radius: 100px;
-  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
   gap: 8px;
-  transform: translateX(-60px);
+  transform: translateX(60px);
   justify-content: center;
 }
 .profile .contentProfile .wallet .chargeWallet form .btn img {
@@ -628,7 +628,6 @@ footer .group ul li a:hover {
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: scaleX(-1);
 }
 .profile .contentProfile .notifications {
   display: flex;
@@ -883,7 +882,7 @@ footer .group ul li a:hover {
   min-height: 56px;
   border-radius: 12px;
   color: var(--whiteColor) !important;
-  direction: rtl !important;
+  direction: ltr !important;
 }
 .formGroup .form-select:focus,
 .formGroup .form-control:focus {
@@ -914,7 +913,7 @@ footer .group ul li a:hover {
   content: "";
   height: 1000px;
   width: 0;
-  right: 50%;
+  left: 50%;
   transition: var(--transition);
   background: var(--mainColor);
   transform: rotate(-25deg);
@@ -926,7 +925,7 @@ footer .group ul li a:hover {
 }
 .customBtn:hover::after {
   width: 110%;
-  right: -10px;
+  left: -10px;
 }
 .customBtn.rate {
   color: #e29b00;
@@ -1062,7 +1061,7 @@ footer .group ul li a:hover {
   position: absolute;
   z-index: 2;
   top: -24px;
-  right: -12px;
+  left: -12px;
   width: 40px;
   aspect-ratio: 1;
   background-color: var(--darkColor2);
@@ -1286,10 +1285,10 @@ footer .group ul li a:hover {
   height: auto;
 }
 .swiper .swiper-slide-prev {
-  transform-origin: right center;
+  transform-origin: left center;
 }
 .swiper .swiper-slide-next {
-  transform-origin: left center;
+  transform-origin: right center;
 }
 
 .productDetails {
@@ -1356,7 +1355,7 @@ footer .group ul li a:hover {
 }
 .productDetails .itemDetailsSlider .swiperControl {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
 }
 .productDetails .itemDetailsSlider .swiperControl .swiperBtns .swiper-button-next,
@@ -1383,7 +1382,7 @@ footer .group ul li a:hover {
   flex-wrap: wrap;
 }
 .productDetails .productCard .price .quantity {
-  margin-right: auto;
+  margin-left: auto;
   white-space: nowrap;
 }
 .productDetails .productCard .price .singlePrice {
@@ -1433,8 +1432,8 @@ footer .group ul li a:hover {
 .swiperControl .swiperBtns .swiper-button-next,
 .swiperControl .swiperBtns .swiper-button-prev {
   position: relative;
-  right: unset;
   left: unset;
+  right: unset;
   top: unset;
   bottom: unset;
   margin: unset;
@@ -1471,7 +1470,6 @@ footer .group ul li a:hover {
   background-size: contain;
   transition: var(--transition);
   filter: brightness(0);
-  transform: scaleX(-1);
 }
 @media screen and (max-width: 768px) {
   .swiperControl .swiperBtns .swiper-button-next::after,
@@ -1496,16 +1494,16 @@ footer .group ul li a:hover {
   opacity: 0.2;
 }
 .swiperControl .swiperBtns .swiper-button-next {
-  right: unset;
+  left: unset;
 }
 .swiperControl .swiperBtns .swiper-button-next::after {
-  transform: unset;
+  transform: scale(-1);
 }
 .swiperControl .swiper-pagination {
   position: relative;
   min-height: 16px;
-  right: unset;
   left: unset;
+  right: unset;
   top: unset;
   bottom: unset;
   margin: unset;
@@ -1537,7 +1535,7 @@ footer .group ul li a:hover {
 .clientsOpinions .opinionCard {
   background-color: var(--lightDarkColor);
   border-radius: 16px;
-  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   padding: 20px;
   margin-top: 40px;
   display: flex;
@@ -1684,7 +1682,7 @@ header .mainLinks a.active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  right: 0;
   z-index: -1;
 }
 .hero::before {
@@ -1695,7 +1693,7 @@ header .mainLinks a.active {
   box-shadow: 0px 0px 500px 150px var(--mainColor);
   position: absolute;
   bottom: 30%;
-  right: 0;
+  left: 0;
   z-index: -1;
 }
 .hero .title {
@@ -1727,8 +1725,8 @@ header .mainLinks a.active {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   width: calc(100% + 10px);
   height: calc(100% + 10px);
   border-radius: 100px;
@@ -1738,8 +1736,8 @@ header .mainLinks a.active {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   width: 100%;
   height: 100%;
   border-radius: 100px;
@@ -1769,7 +1767,7 @@ header .mainLinks a.active {
   flex-direction: column;
   border-radius: 16px;
   background-color: var(--lightDarkColor);
-  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
 .productCard .productImg {
   width: 100%;
@@ -1822,6 +1820,7 @@ header .mainLinks a.active {
      object-fit: contain;
   aspect-ratio: 1;
   filter: brightness(0) invert(1);
+  transform: scaleX(-1);
 }
 
 .trust {
@@ -1892,8 +1891,8 @@ header .mainLinks a.active {
   -o-object-fit: contain;
      object-fit: contain;
   max-height: 250px;
-  -o-object-position: left;
-     object-position: left;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .contactUs {
@@ -1910,7 +1909,7 @@ header .mainLinks a.active {
   padding: 24px;
   margin: 0 auto;
   border-radius: 24px;
-  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .categories {
@@ -1946,7 +1945,7 @@ header .mainLinks a.active {
 .categories .allCategories .categoryCard .new {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   background-color: #00b67c;
   color: var(--whiteColor);
   padding: 4px 8px;
@@ -1967,7 +1966,7 @@ header .mainLinks a.active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  right: 0;
   z-index: -1;
 }
 .heroSlider::before {
@@ -1978,7 +1977,7 @@ header .mainLinks a.active {
   box-shadow: 0px 0px 500px 150px var(--mainColor);
   position: absolute;
   bottom: 30%;
-  right: 0;
+  left: 0;
   z-index: -1;
 }
 .heroSlider .swiper {
@@ -2016,8 +2015,8 @@ header .mainLinks a.active {
   .heroSlider .swiperControl {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%) !important;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%) !important;
     z-index: 2;
     width: 95%;
   }
@@ -2037,7 +2036,7 @@ header .mainLinks a.active {
   background-color: var(--darkColor);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 999999;
   width: 100%;
   height: 100%;
@@ -2061,7 +2060,7 @@ header .mainLinks a.active {
 .preloader .preloaderImg::after {
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100px;
   height: 100px;
@@ -2113,4 +2112,4 @@ header .mainLinks a.active {
   p {
     font-size: 14px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styleEN.css.map */

@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Spinner loader
-  $(".spinerLoader").delay(500).fadeOut(300);
+   $(".preloader").delay(1000).fadeOut(300);
   // AOS delay setup
   $("section").each(function () {
     const sectionDivs = $(this).find("[data-aos]");
