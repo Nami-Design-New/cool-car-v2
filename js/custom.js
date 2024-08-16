@@ -38,7 +38,6 @@ $(document).ready(function () {
   const elements = document.querySelectorAll(".counterUp");
   elements.forEach((el) => IO.observe(el));
 });
-
 // profile Image Input
 $(document).ready(function () {
   $(".uploadImageInput").on("change", function (event) {
@@ -55,9 +54,9 @@ $(document).ready(function () {
     }
   });
 });
-
 document.querySelectorAll('.progressBar').forEach(bar => {
   const value = bar.getAttribute('data-value');  // Get the value from data-value attribute
   const progressLine = bar.querySelector('.progressLine');
   progressLine.style.width = `${value}%`;        // Set the width of the progress line
 });
+Fancybox.bind("[data-fancybox]", {});

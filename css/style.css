@@ -1281,7 +1281,7 @@ footer .group ul li a:hover {
 }
 .swiper .swiper-slide {
   transition: 0.3s;
-  opacity: 0;
+  opacity: 1;
   overflow: unset;
   height: auto;
 }
@@ -1290,10 +1290,6 @@ footer .group ul li a:hover {
 }
 .swiper .swiper-slide-next {
   transform-origin: left center;
-}
-.swiper .swiper-slide-active,
-.swiper .swiper-slide-visible {
-  opacity: 1;
 }
 
 .productDetails {
@@ -1406,11 +1402,21 @@ footer .group ul li a:hover {
   background-color: var(--mainColor);
   padding: 8px 16px;
   color: var(--whiteColor);
+  border-radius: 12px;
 }
 .productDetails .productCard .btns .btn.outline {
   background-color: transparent;
   color: var(--mainColor);
   border: 1px solid var(--mainColor);
+}
+.productDetails .subTitle {
+  font-weight: bold;
+}
+.productDetails .features img {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1437,4 +1443,156 @@ footer .group ul li a:hover {
   p {
     font-size: 13px;
   }
+}
+.swiperControl {
+  position: relative;
+  padding: 8px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.swiperControl .swiperBtns {
+  display: flex;
+  gap: 8px;
+}
+.swiperControl .swiperBtns .swiper-button-next,
+.swiperControl .swiperBtns .swiper-button-prev {
+  position: relative;
+  right: unset;
+  left: unset;
+  top: unset;
+  bottom: unset;
+  margin: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--mainColor);
+  border: 1px solid var(--darkColor);
+  border-radius: 100%;
+  transition: var(--transition);
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+@media screen and (max-width: 768px) {
+  .swiperControl .swiperBtns .swiper-button-next,
+  .swiperControl .swiperBtns .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+  }
+}
+.swiperControl .swiperBtns .swiper-button-next::after,
+.swiperControl .swiperBtns .swiper-button-prev::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-image: url("../img/icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: var(--transition);
+  filter: brightness(0);
+  transform: scaleX(-1);
+}
+@media screen and (max-width: 768px) {
+  .swiperControl .swiperBtns .swiper-button-next::after,
+  .swiperControl .swiperBtns .swiper-button-prev::after {
+    width: 16px;
+    height: 16px;
+  }
+}
+.swiperControl .swiperBtns .swiper-button-next:hover,
+.swiperControl .swiperBtns .swiper-button-prev:hover {
+  opacity: 1;
+  background-color: var(--mainColor);
+  color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+.swiperControl .swiperBtns .swiper-button-next:hover::after,
+.swiperControl .swiperBtns .swiper-button-prev:hover::after {
+  filter: brightness(0) invert(1);
+}
+.swiperControl .swiperBtns .swiper-button-next.swiper-button-disabled,
+.swiperControl .swiperBtns .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.2;
+}
+.swiperControl .swiperBtns .swiper-button-next {
+  right: unset;
+}
+.swiperControl .swiperBtns .swiper-button-next::after {
+  transform: unset;
+}
+.swiperControl .swiper-pagination {
+  position: relative;
+  min-height: 16px;
+  right: unset;
+  left: unset;
+  top: unset;
+  bottom: unset;
+  margin: unset;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.swiperControl .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5764705882);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3098039216);
+  transition: var(--transition);
+  border-radius: 16px;
+}
+.swiperControl .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+}
+
+.clientsOpinions {
+  padding: 80px 0;
+}
+.clientsOpinions .swiper {
+  padding-top: 20px;
+}
+.clientsOpinions .opinionCard {
+  background-color: var(--lightDarkColor);
+  border-radius: 16px;
+  border-bottom-left-radius: 40px;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.clientsOpinions .opinionCard .userImg {
+  width: 60px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  margin-top: -60px;
+  outline: 8px solid var(--darkColor);
+}
+.clientsOpinions .opinionCard .rate {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+}
+.clientsOpinions .opinionCard .rate img {
+  width: 20px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(100%);
+}
+.clientsOpinions .opinionCard .rate img.star {
+  filter: none;
+}
+.clientsOpinions .opinionCard .opinion {
+  width: 100%;
+  padding: 16px 0;
 }/*# sourceMappingURL=style.css.map */

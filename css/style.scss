@@ -1248,7 +1248,7 @@ footer {
   width: 100%;
   .swiper-slide {
     transition: 0.3s;
-    opacity: 0;
+    opacity: 1;
     overflow: unset;
     height: auto;
   }
@@ -1258,10 +1258,10 @@ footer {
   .swiper-slide-next {
     transform-origin: left center;
   }
-  .swiper-slide-active,
-  .swiper-slide-visible {
-    opacity: 1;
-  }
+  // .swiper-slide-active,
+  // .swiper-slide-visible {
+  //   opacity: 1;
+  // }
 }
 .productDetails {
   padding: 80px 0;
@@ -1368,7 +1368,8 @@ footer {
         background-color: var(--mainColor);
         padding: 8px 16px;
         color: var(--whiteColor);
-        &.outline{
+        border-radius: 12px;
+        &.outline {
           background-color: transparent;
           color: var(--mainColor);
           border: 1px solid var(--mainColor);
@@ -1376,8 +1377,20 @@ footer {
       }
     }
   }
-}
 
+  .subTitle {
+    font-weight: bold;
+  }
+
+  .features {
+    img {
+      width: 100%;
+      max-width: 350px;
+      margin: auto;
+      border-radius: 24px;
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -1402,5 +1415,144 @@ footer {
   span,
   p {
     font-size: 13px;
+  }
+}
+
+.swiperControl {
+  position: relative;
+  padding: 8px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  .swiperBtns {
+    display: flex;
+    gap: 8px;
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: relative;
+      right: unset;
+      left: unset;
+      top: unset;
+      bottom: unset;
+      margin: unset;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: var(--mainColor);
+      border: 1px solid var(--darkColor);
+      border-radius: 100%;
+      transition: var(--transition);
+      opacity: 0.8;
+      backdrop-filter: blur(10px);
+      @media screen and (max-width: 768px) {
+        width: 32px;
+        height: 32px;
+      }
+      &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-image: url("../img/icons/arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: var(--transition);
+        filter: brightness(0);
+        transform: scaleX(-1);
+        @media screen and (max-width: 768px) {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &:hover {
+        opacity: 1;
+        background-color: var(--mainColor);
+        color: var(--mainColor);
+        border-color: var(--mainColor);
+        &::after {
+          filter: brightness(0) invert(1);
+        }
+      }
+      &.swiper-button-disabled {
+        opacity: 0.2;
+      }
+    }
+    .swiper-button-next {
+      right: unset;
+      &::after {
+        transform: unset;
+      }
+    }
+  }
+  .swiper-pagination {
+    position: relative;
+    min-height: 16px;
+    right: unset;
+    left: unset;
+    top: unset;
+    bottom: unset;
+    margin: unset;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .swiper-pagination-bullet {
+      background-color: #ffffff93;
+      backdrop-filter: blur(5px);
+      border: 1px solid #0000004f;
+      transition: var(--transition);
+      border-radius: 16px;
+      &.swiper-pagination-bullet-active {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.clientsOpinions {
+  padding: 80px 0;
+  .swiper {
+    padding-top: 20px;
+  }
+  .opinionCard {
+    background-color: var(--lightDarkColor);
+    border-radius: 16px;
+    border-bottom-left-radius: 40px;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    .userImg{
+      width: 60px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 100%;
+      margin-top: -60px;
+      outline: 8px solid var(--darkColor);
+    }
+    .rate {
+      display: flex;
+      gap: 1px;
+      justify-content: center;
+      img {
+        width: 20px;
+        aspect-ratio: 1;
+        object-fit: contain;
+        filter: grayscale(100%);
+        &.star {
+          filter: none;
+        }
+      }
+    }
+    .opinion{
+      width: 100%;
+      padding: 16px 0;
+    }
   }
 }
