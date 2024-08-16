@@ -152,14 +152,12 @@ content {
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
-
 footer {
   padding: 40px 0 40px;
   position: relative;
   background-color: var(--darkColor);
   isolation: isolate;
   overflow: hidden;
-
   &::after {
     content: "";
     width: 0px;
@@ -200,7 +198,6 @@ footer {
     margin-top: 24px;
     padding-top: 24px;
     justify-content: center;
-
     @media screen and (max-width: 768px) {
       justify-content: space-around;
     }
@@ -209,7 +206,6 @@ footer {
       align-items: center;
       gap: 4px;
       color: var(--lightGrayColor);
-
       a {
         font-weight: bold;
         &:hover {
@@ -317,7 +313,6 @@ footer {
     }
   }
 }
-
 .uploadImage {
   position: relative;
   margin: auto;
@@ -373,7 +368,6 @@ footer {
     }
   }
 }
-
 .profile {
   padding: 80px 0;
   .sideProfile {
@@ -389,7 +383,6 @@ footer {
       display: flex;
       align-items: center;
       gap: 12px;
-
       .icon {
         width: 48px;
         aspect-ratio: 1;
@@ -399,7 +392,6 @@ footer {
         padding: 4px;
         background-color: var(--darkColor);
         border-radius: 100px;
-
         img {
           width: 20px;
           height: 20px;
@@ -455,7 +447,6 @@ footer {
         }
       }
     }
-
     .wallet {
       display: flex;
       // flex-wrap: wrap;
@@ -596,7 +587,6 @@ footer {
         }
       }
     }
-
     .notifications {
       display: flex;
       flex-direction: column;
@@ -611,7 +601,6 @@ footer {
         .title {
           font-weight: bold;
         }
-
         .time {
           color: var(--lightGrayColor);
         }
@@ -619,7 +608,6 @@ footer {
     }
     @media screen and (max-width: 768px) {
       padding: 12px;
-
       .chargeWallet {
         form {
           width: 100% !important;
@@ -640,7 +628,6 @@ footer {
     box-shadow: var(--shadow);
     border: none;
     border-radius: 24px;
-
     .accordion-button {
       background-color: var(--darkColor);
       border: none;
@@ -700,7 +687,6 @@ footer {
             width: 100%;
             background-color: var(--lightDarkColor);
             border-radius: 100px;
-
             .progressLine {
               width: 100%;
               height: 100%;
@@ -802,7 +788,6 @@ footer {
           align-items: center;
           padding-bottom: 8px;
           border-bottom: 1px solid var(--mainColor20);
-
           .num {
             padding: 8px;
             background-color: var(--mainColor20);
@@ -853,7 +838,6 @@ footer {
       filter: brightness(0) invert(1);
     }
   }
-
   .form-select,
   .form-control {
     background-color: var(--darkColor);
@@ -867,7 +851,6 @@ footer {
     }
   }
 }
-
 .customBtn {
   border: none;
   outline: none;
@@ -1067,7 +1050,6 @@ footer {
           color: var(--mainColor);
         }
       }
-
       .totalPrice {
         color: var(--mainColor);
         font-weight: bold;
@@ -1118,7 +1100,6 @@ footer {
     text-align: center;
   }
 }
-
 .checkout {
   padding: 80px 0;
   .pageHead {
@@ -1149,7 +1130,6 @@ footer {
       flex-direction: column;
       gap: 8px;
     }
-
     .btn-group {
       display: flex;
       flex-direction: column;
@@ -1162,7 +1142,6 @@ footer {
         border: 1px solid var(--darkColor2);
         padding: 8px;
         border-radius: 12px;
-
         .controls {
           display: flex;
           align-items: center;
@@ -1235,7 +1214,6 @@ footer {
     }
   }
 }
-
 #mapView {
   height: 250px;
   border-radius: 16px;
@@ -1334,7 +1312,6 @@ footer {
       }
     }
   }
-
   .productCard {
     margin-bottom: 24px;
     display: flex;
@@ -1377,11 +1354,9 @@ footer {
       }
     }
   }
-
   .subTitle {
     font-weight: bold;
   }
-
   .features {
     img {
       width: 100%;
@@ -1391,7 +1366,6 @@ footer {
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 34px;
@@ -1417,7 +1391,6 @@ footer {
     font-size: 13px;
   }
 }
-
 .swiperControl {
   position: relative;
   padding: 8px;
@@ -1512,7 +1485,6 @@ footer {
     }
   }
 }
-
 .clientsOpinions {
   padding: 80px 0;
   .swiper {
@@ -1528,7 +1500,7 @@ footer {
     flex-direction: column;
     gap: 8px;
     align-items: center;
-    .userImg{
+    .userImg {
       width: 60px;
       aspect-ratio: 1;
       object-fit: cover;
@@ -1550,9 +1522,99 @@ footer {
         }
       }
     }
-    .opinion{
+    .opinion {
       width: 100%;
       padding: 16px 0;
+    }
+  }
+}
+header {
+  .navbar {
+    .navbar-toggler{
+      filter: invert(1);
+      box-shadow: none !important;
+      outline: none !important;
+      padding: 4px;
+    }
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+      img {
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      color: var(--whiteColor);
+      gap: 8px;
+      padding: 4px 8px;
+      &.active{
+        color: var(--mainColor);
+      }
+      img {
+        width: 20px;
+        aspect-ratio: 1;
+        object-fit: contain;
+        border: 8px;
+        &.icon {
+          filter: brightness(0) invert(1);
+        }
+      }
+      &.show,
+      &:hover {
+        color: var(--mainColor);
+      }
+    }
+    .logo {
+      flex: 1;
+      height: 36px;
+      img {
+        height: 100%;
+        width: 100%;
+        min-width: 100px;
+        object-fit: contain;
+      }
+    }
+    .dropdown-menu {
+      background-color: var(--lightDarkColor);
+      padding: 0px;
+      border-radius: 16px;
+      .dropdown-item {
+        color: var(--whiteColor);
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        gap: 8px;
+        img {
+          width: 24px;
+          aspect-ratio: 1;
+          object-fit: contain;
+          border-radius: 8px;
+        }
+        &:hover {
+          color: var(--mainColor);
+        }
+      }
+    }
+    .navbar-collapse {
+      padding: 12px;
+      gap: 8px;
+    }
+  }
+  .mainLinks{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    a{
+      padding: 4px;
+      white-space: nowrap;
+      &.active{
+        color: var(--mainColor);
+      }
     }
   }
 }
