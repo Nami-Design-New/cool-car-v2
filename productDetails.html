@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -23,7 +22,6 @@
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
     <!-- ================  header ================= -->
     <header>
@@ -82,7 +80,7 @@
         </nav>
         <section class="mainLinks">
             <a href="index.html" class="active"> الصفحة الرئيسية </a>
-            <a href="index.html"> المنتجات </a>
+            <a href="products.html"> المنتجات </a>
             <a href="index.html"> حول </a>
             <a href="index.html"> العروض </a>
         </section>
@@ -248,11 +246,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper">
+                <div class="swiper" data-aos="fade-up">
                     <div class="swiper-wrapper">
                         <!-- swiper Slide -->
                         <div class="swiper-slide">
-                            <div class="opinionCard" data-aos="fade-up">
+                            <div class="opinionCard">
                                 <img class="userImg" src="img/placeholder.svg" alt="">
                                 <div class="d-flex justify-content-between gap-2 w-100">
                                     <p class="name"> محمد محمود </p>
@@ -271,7 +269,7 @@
                         </div>
                         <!-- swiper Slide -->
                         <div class="swiper-slide">
-                            <div class="opinionCard" data-aos="fade-up">
+                            <div class="opinionCard">
                                 <img class="userImg" src="img/placeholder.svg" alt="">
                                 <div class="d-flex justify-content-between gap-2 w-100">
                                     <p class="name"> محمد محمود </p>
@@ -290,7 +288,7 @@
                         </div>
                         <!-- swiper Slide -->
                         <div class="swiper-slide">
-                            <div class="opinionCard" data-aos="fade-up">
+                            <div class="opinionCard">
                                 <img class="userImg" src="img/placeholder.svg" alt="">
                                 <div class="d-flex justify-content-between gap-2 w-100">
                                     <p class="name"> محمد محمود </p>
@@ -309,7 +307,7 @@
                         </div>
                         <!-- swiper Slide -->
                         <div class="swiper-slide">
-                            <div class="opinionCard" data-aos="fade-up">
+                            <div class="opinionCard">
                                 <img class="userImg" src="img/placeholder.svg" alt="">
                                 <div class="d-flex justify-content-between gap-2 w-100">
                                     <p class="name"> محمد محمود </p>
@@ -430,7 +428,6 @@
     <script>
         // item Details Slider
         var itemDetailsSliderThumbs = new Swiper(".itemDetailsSlider .thumbs", {
-            // loop: true,
             spaceBetween: 8,
             slidesPerView: 4,
             freeMode: true,
@@ -449,7 +446,6 @@
             },
         });
         var itemDetailsSliderSlider = new Swiper(".itemDetailsSlider .slider", {
-            // loop: true,
             spaceBetween: 8,
             pagination: {
                 el: ".itemDetailsSlider .swiper-pagination",
@@ -508,5 +504,4 @@
         });
     </script>
 </body>
-
 </html>
