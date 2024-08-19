@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title> cool car </title>
-    <meta name="title" content="cool car">
-    <meta name="description" content="cool car ">
+    <title>cool car</title>
+    <meta name="title" content="cool car" />
+    <meta name="description" content="cool car " />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/fav.svg" />
     <!-- bootstrap -->
@@ -22,534 +21,742 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ================  header ================= -->
-        <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand d-lg-none" href="index.html">
-                    <img src="img/logo.svg" alt="">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-lg-none" href="index.html">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                EGP
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                  EGP
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                            EGP
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                                EGP
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                                EGP
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                                EGP
-                            </a>
-                        </div>
-                    </div>
-                    <a class="nav-link" href="login.html">
-                        <img class="icon" src="img/icons/user.svg" alt="">
-                        تسجيل دخول
-                    </a>
-                    <a class="nav-link" href="cart.html">
-                        <img class="icon" src="img/icons/cart.svg" alt="">
-                        السله (0 ر.س)
-                    </a>
-                    <a class="nav-link logo d-none d-lg-flex" href="index.html">
-                        <img src="img/logo.svg" alt="">
-                    </a>
-                    <a class="nav-link" href="#">
-                        الا سئله الشائعه
-                    </a>
-                    <a class="nav-link" href="#">
-                        سياسه الاستبدال
-                    </a>
-                    <a class="nav-link" href="#">
-                        ارشادات التركيب
-                    </a>
-                </div>
+                <a class="dropdown-item" href="#">
+                  <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                  EGP
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                  EGP
+                </a>
+              </div>
             </div>
-        </nav>
-        <section class="mainLinks">
-            <a href="index.html" class="active"> الصفحة الرئيسية </a>
-            <a href="products.html"> المنتجات </a>
-            <a href="index.html"> حول </a>
-            <a href="index.html"> العروض </a>
-        </section>
+            <!-- start  dark mode -->
+            <img src="img/icons/sun.svg" id="icon" class="Icon_dark" />
+            <!-- End dark mode -->
+
+            <a class="nav-link" href="login.html">
+              <img class="icon" src="img/icons/user.svg" alt="" />
+              تسجيل دخول
+            </a>
+            <a class="nav-link" href="cart.html">
+              <img class="icon" src="img/icons/cart.svg" alt="" />
+              السله (0 ر.س)
+            </a>
+            <a class="nav-link logo d-none d-lg-flex" href="index.html">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <a class="nav-link" href="Questions.html"> الا سئله الشائعه </a>
+            <a class="nav-link" href="Return-exchange.html">
+              سياسه الاستبدال
+            </a>
+            <a class="nav-link" href="#"> ارشادات التركيب </a>
+          </div>
+        </div>
+      </nav>
+      <section class="mainLinks">
+        <a href="index.html" class="active"> الصفحة الرئيسية </a>
+        <a href="products.html"> المنتجات </a>
+        <a href="aboutus"> حول </a>
+        <a href="index.html"> العروض </a>
+      </section>
     </header>
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((((( content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <content>
-        <section class="profile">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-xl-3 p-2">
-                        <div class="sideProfile" data-aos="fade-up">
-                            <a class="link" href="profile.html">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/profile.svg" alt="profile">
-                                </span>
-                                تعديل الملف
-                            </a>
-                            <a class="link active" href="orders.html">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/orders.svg" alt="orders">
-                                </span>
-                                طلباتي
-                            </a>
-                            <a class="link" href="changePassword.html">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/password.svg" alt="password.svg">
-                                </span>
-                                تغيير كلمة المرور
-                            </a>
-                            <a class="link" href="wallet.html">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/wallet.svg" alt="wallet">
-                                </span>
-                                المحفظة
-                            </a>
-                            <a class="link" href="notifications.html">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/notifications.svg" alt="notifications">
-                                </span>
-                                الاشعارات
-                            </a>
-                            <a class="link last" href="login.html">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/logout.svg" alt="logout">
-                                </span>
-                                تسجيل الخروج
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-xl-9 p-2">
-                        <div class="contentProfile" data-aos="fade-up">
-                            <div class="accordion orders" id="ordersAccordion">
-                                <!-- accordion item -->
-                                <div class="accordion-item">
-                                    <div class="accordion-button " data-bs-toggle="collapse" data-bs-target="#order1">
-                                        <div class="shortData">
-                                            <div class="orderHead">
-                                                <p class="line">
-                                                    رقم الطلب : <span> 1092032 </span>
-                                                </p>
-                                                <p class="line highlight">
-                                                    سعر الطلب : <span> 500 ريال </span>
-                                                </p>
-                                                <p class="line">
-                                                    تاريخ الطلب : <span> 2024/5/12 </span>
-                                                </p>
-                                            </div>
-                                            <div class="date">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/date.svg" alt="">
-                                                    2024/2/2
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/time.svg" alt="">
-                                                    10 : 30 AM
-                                                </div>
-                                                <div class="progressBar" data-value="20">
-                                                    <div class="progressLine"></div>
-                                                </div>
-                                            </div>
-                                            <div class="status">
-                                                جاري تنفيذ طلبك
-                                                <div class="icon">
-                                                    <img src="img/icons/status.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="order1" class="accordion-collapse collapse show"
-                                        data-bs-parent="#ordersAccordion">
-                                        <div class="accordion-body row">
-                                            <div class="col-md-6 p-2">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/orderID.svg" alt="">
-                                                    <div class="text"> رقم الطلب <span> 1092032 </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/payment.svg" alt="">
-                                                    <div class="text"> طرق الدفع <span> بطاقات الائتمان </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/location.svg" alt="">
-                                                    <div class="text"> العنوان <span> السعوديه / الرياض/ شارع فيصل
-                                                        </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/money.svg" alt="">
-                                                    <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 p-2">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/money.svg" alt="">
-                                                    <div class="text"> تفاصيل الطلب </div>
-                                                </div>
-                                                <div class="orderDetails">
-                                                    <div class="main">
-                                                        <span class="num"> 1</span>
-                                                        <h6> نانو سيراميك x2 </h6>
-                                                        <span class="price"> 200 ريال </span>
-                                                    </div>
-                                                    <div class="sub">
-                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                                    </div>
-                                                </div>
-                                                <div class="orderDetails">
-                                                    <div class="main">
-                                                        <span class="num"> 2 </span>
-                                                        <h6> نانو سيراميك x2 </h6>
-                                                        <span class="price"> 200 ريال </span>
-                                                    </div>
-                                                    <div class="sub">
-                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 p-2">
-                                                <button class="customBtn"> الغاء الطلب </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion item -->
-                                <div class="accordion-item">
-                                    <div class="accordion-button  collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#order2">
-                                        <div class="shortData shipped">
-                                            <div class="orderHead">
-                                                <p class="line">
-                                                    رقم الطلب : <span> 1092032 </span>
-                                                </p>
-                                                <p class="line highlight">
-                                                    سعر الطلب : <span> 500 ريال </span>
-                                                </p>
-                                                <p class="line">
-                                                    تاريخ الطلب : <span> 2024/5/12 </span>
-                                                </p>
-                                            </div>
-                                            <div class="date">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/date.svg" alt="">
-                                                    2024/2/2
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/time.svg" alt="">
-                                                    10 : 30 AM
-                                                </div>
-                                                <div class="progressBar" data-value="50">
-                                                    <div class="progressLine"></div>
-                                                </div>
-                                            </div>
-                                            <div class="status">
-                                                تم شحن الطلب
-                                                <div class="icon">
-                                                    <img src="img/icons/shipped.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="order2" class="accordion-collapse collapse"
-                                        data-bs-parent="#ordersAccordion">
-                                        <div class="accordion-body row">
-                                            <div class="col-md-6 p-2">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/orderID.svg" alt="">
-                                                    <div class="text"> رقم الطلب <span> 1092032 </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/payment.svg" alt="">
-                                                    <div class="text"> طرق الدفع <span> بطاقات الائتمان </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/location.svg" alt="">
-                                                    <div class="text"> العنوان <span> السعوديه / الرياض/ شارع فيصل
-                                                        </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/money.svg" alt="">
-                                                    <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 p-2">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/money.svg" alt="">
-                                                    <div class="text"> تفاصيل الطلب </div>
-                                                </div>
-                                                <div class="orderDetails">
-                                                    <div class="main">
-                                                        <span class="num"> 1</span>
-                                                        <h6> نانو سيراميك x2 </h6>
-                                                        <span class="price"> 200 ريال </span>
-                                                    </div>
-                                                    <div class="sub">
-                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                                    </div>
-                                                </div>
-                                                <div class="orderDetails">
-                                                    <div class="main">
-                                                        <span class="num"> 2 </span>
-                                                        <h6> نانو سيراميك x2 </h6>
-                                                        <span class="price"> 200 ريال </span>
-                                                    </div>
-                                                    <div class="sub">
-                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 p-2">
-                                                <button class="customBtn"> الغاء الطلب </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion item -->
-                                <div class="accordion-item">
-                                    <div class="accordion-button  collapsed" data-bs-toggle="collapse"
-                                        data-bs-target="#order3">
-                                        <div class="shortData delivered">
-                                            <div class="orderHead">
-                                                <p class="line">
-                                                    رقم الطلب : <span> 1092032 </span>
-                                                </p>
-                                                <p class="line highlight">
-                                                    سعر الطلب : <span> 500 ريال </span>
-                                                </p>
-                                                <p class="line">
-                                                    تاريخ الطلب : <span> 2024/5/12 </span>
-                                                </p>
-                                            </div>
-                                            <div class="date">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/date.svg" alt="">
-                                                    2024/2/2
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/time.svg" alt="">
-                                                    10 : 30 AM
-                                                </div>
-                                                <div class="progressBar" data-value="100">
-                                                    <div class="progressLine"></div>
-                                                </div>
-                                            </div>
-                                            <div class="status">
-                                                تم اكتمال الطلب
-                                                <div class="icon">
-                                                    <img src="img/icons/delivered.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="order3" class="accordion-collapse collapse"
-                                        data-bs-parent="#ordersAccordion">
-                                        <div class="accordion-body row">
-                                            <div class="col-md-6 p-2">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/orderID.svg" alt="">
-                                                    <div class="text"> رقم الطلب <span> 1092032 </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/payment.svg" alt="">
-                                                    <div class="text"> طرق الدفع <span> بطاقات الائتمان </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/location.svg" alt="">
-                                                    <div class="text"> العنوان <span> السعوديه / الرياض/ شارع فيصل
-                                                        </span> </div>
-                                                </div>
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/money.svg" alt="">
-                                                    <div class="text"> اجمالي السعر <span> 200 ريال </span> </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 p-2">
-                                                <div class="info">
-                                                    <img class="icon" src="img/icons/money.svg" alt="">
-                                                    <div class="text"> تفاصيل الطلب </div>
-                                                </div>
-                                                <div class="orderDetails">
-                                                    <div class="main">
-                                                        <span class="num"> 1</span>
-                                                        <h6> نانو سيراميك x2 </h6>
-                                                        <span class="price"> 200 ريال </span>
-                                                    </div>
-                                                    <div class="sub">
-                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                                    </div>
-                                                </div>
-                                                <div class="orderDetails">
-                                                    <div class="main">
-                                                        <span class="num"> 2 </span>
-                                                        <h6> نانو سيراميك x2 </h6>
-                                                        <span class="price"> 200 ريال </span>
-                                                    </div>
-                                                    <div class="sub">
-                                                        <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                        <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                        <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                        <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 p-2">
-                                                <!-- Button trigger modal -->
-                                                <button class="customBtn rate" data-bs-toggle="modal"
-                                                    data-bs-target="#rateModal"> تقييم </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-
-                        <div class="modal fade" id="rateModal" tabindex="-1"
-                            aria-labelledby="rateModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="rateModalLabel">قيم المنتجات</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="">
-                                            <div class="stars">
-                                                <div class="star-rating">
-                                                    <input type="radio" id="star5" name="rating" value="5" />
-                                                    <label for="star5" title="5 stars">
-                                                        <img src="img/icons/star.svg" alt="">
-                                                    </label>
-                                                    <input type="radio" id="star4" name="rating" value="4" />
-                                                    <label for="star4" title="4 stars">
-                                                        <img src="img/icons/star.svg" alt="">
-                                                    </label>
-                                                    <input type="radio" id="star3" name="rating" value="3" />
-                                                    <label for="star3" title="3 stars">
-                                                        <img src="img/icons/star.svg" alt="">
-                                                    </label>
-                                                    <input type="radio" id="star2" name="rating" value="2" />
-                                                    <label for="star2" title="2 stars">
-                                                        <img src="img/icons/star.svg" alt="">
-                                                    </label>
-                                                    <input type="radio" id="star1" name="rating" value="1" />
-                                                    <label for="star1" title="1 star">
-                                                        <img src="img/icons/star.svg" alt="">
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <textarea class="form-control" rows="8" placeholder="اكتب تجربتك"></textarea>
-                                            <button type="submit" class="customBtn mt-4">ارسال</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+      <section class="profile">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-xl-3 p-2">
+              <div class="sideProfile" data-aos="fade-up">
+                <a class="link" href="profile.html">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/profile.svg"
+                      alt="profile"
+                    />
+                  </span>
+                  تعديل الملف
+                </a>
+                <a class="link active" href="orders.html">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/orders.svg"
+                      alt="orders"
+                    />
+                  </span>
+                  طلباتي
+                </a>
+                <a class="link" href="changePassword.html">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/password.svg"
+                      alt="password.svg"
+                    />
+                  </span>
+                  تغيير كلمة المرور
+                </a>
+                <a class="link" href="wallet.html">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/wallet.svg"
+                      alt="wallet"
+                    />
+                  </span>
+                  المحفظة
+                </a>
+                <a class="link" href="notifications.html">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/notifications.svg"
+                      alt="notifications"
+                    />
+                  </span>
+                  الاشعارات
+                </a>
+                <a class="link last" href="login.html">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/logout.svg"
+                      alt="logout"
+                    />
+                  </span>
+                  تسجيل الخروج
+                </a>
+              </div>
             </div>
-        </section>
+            <div class="col-md-8 col-xl-9 p-2">
+              <div class="contentProfile" data-aos="fade-up">
+                <div class="accordion orders" id="ordersAccordion">
+                  <!-- accordion item -->
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#order1"
+                    >
+                      <div class="shortData">
+                        <div class="orderHead">
+                          <p class="line">رقم الطلب : <span> 1092032 </span></p>
+                          <p class="line highlight">
+                            سعر الطلب : <span> 500 ريال </span>
+                          </p>
+                          <p class="line">
+                            تاريخ الطلب : <span> 2024/5/12 </span>
+                          </p>
+                        </div>
+                        <div class="date">
+                          <div class="info">
+                            <img class="icon" src="img/icons/date.svg" alt="" />
+                            2024/2/2
+                          </div>
+                          <div class="info">
+                            <img class="icon" src="img/icons/time.svg" alt="" />
+                            10 : 30 AM
+                          </div>
+                          <div class="progressBar" data-value="20">
+                            <div class="progressLine"></div>
+                          </div>
+                        </div>
+                        <div class="status">
+                          جاري تنفيذ طلبك
+                          <div class="icon">
+                            <img src="img/icons/status.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      id="order1"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#ordersAccordion"
+                    >
+                      <div class="accordion-body row">
+                        <div class="col-md-6 p-2">
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/orderID.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              رقم الطلب <span> 1092032 </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/payment.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              طرق الدفع <span> بطاقات الائتمان </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/location.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              العنوان
+                              <span> السعوديه / الرياض/ شارع فيصل </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/money.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              اجمالي السعر <span> 200 ريال </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 p-2">
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/money.svg"
+                              alt=""
+                            />
+                            <div class="text">تفاصيل الطلب</div>
+                          </div>
+                          <div class="orderDetails">
+                            <div class="main">
+                              <span class="num"> 1</span>
+                              <h6>نانو سيراميك x2</h6>
+                              <span class="price"> 200 ريال </span>
+                            </div>
+                            <div class="sub">
+                              <p>زجاج امامي : <span> شفاف اسود </span></p>
+                              <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                              <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                              <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                            </div>
+                          </div>
+                          <div class="orderDetails">
+                            <div class="main">
+                              <span class="num"> 2 </span>
+                              <h6>نانو سيراميك x2</h6>
+                              <span class="price"> 200 ريال </span>
+                            </div>
+                            <div class="sub">
+                              <p>زجاج امامي : <span> شفاف اسود </span></p>
+                              <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                              <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                              <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 p-2">
+                          <button class="customBtn">الغاء الطلب</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- accordion item -->
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#order2"
+                    >
+                      <div class="shortData shipped">
+                        <div class="orderHead">
+                          <p class="line">رقم الطلب : <span> 1092032 </span></p>
+                          <p class="line highlight">
+                            سعر الطلب : <span> 500 ريال </span>
+                          </p>
+                          <p class="line">
+                            تاريخ الطلب : <span> 2024/5/12 </span>
+                          </p>
+                        </div>
+                        <div class="date">
+                          <div class="info">
+                            <img class="icon" src="img/icons/date.svg" alt="" />
+                            2024/2/2
+                          </div>
+                          <div class="info">
+                            <img class="icon" src="img/icons/time.svg" alt="" />
+                            10 : 30 AM
+                          </div>
+                          <div class="progressBar" data-value="50">
+                            <div class="progressLine"></div>
+                          </div>
+                        </div>
+                        <div class="status">
+                          تم شحن الطلب
+                          <div class="icon">
+                            <img src="img/icons/shipped.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      id="order2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#ordersAccordion"
+                    >
+                      <div class="accordion-body row">
+                        <div class="col-md-6 p-2">
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/orderID.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              رقم الطلب <span> 1092032 </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/payment.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              طرق الدفع <span> بطاقات الائتمان </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/location.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              العنوان
+                              <span> السعوديه / الرياض/ شارع فيصل </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/money.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              اجمالي السعر <span> 200 ريال </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 p-2">
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/money.svg"
+                              alt=""
+                            />
+                            <div class="text">تفاصيل الطلب</div>
+                          </div>
+                          <div class="orderDetails">
+                            <div class="main">
+                              <span class="num"> 1</span>
+                              <h6>نانو سيراميك x2</h6>
+                              <span class="price"> 200 ريال </span>
+                            </div>
+                            <div class="sub">
+                              <p>زجاج امامي : <span> شفاف اسود </span></p>
+                              <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                              <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                              <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                            </div>
+                          </div>
+                          <div class="orderDetails">
+                            <div class="main">
+                              <span class="num"> 2 </span>
+                              <h6>نانو سيراميك x2</h6>
+                              <span class="price"> 200 ريال </span>
+                            </div>
+                            <div class="sub">
+                              <p>زجاج امامي : <span> شفاف اسود </span></p>
+                              <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                              <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                              <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 p-2">
+                          <button class="customBtn">الغاء الطلب</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- accordion item -->
+                  <div class="accordion-item">
+                    <div
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#order3"
+                    >
+                      <div class="shortData delivered">
+                        <div class="orderHead">
+                          <p class="line">رقم الطلب : <span> 1092032 </span></p>
+                          <p class="line highlight">
+                            سعر الطلب : <span> 500 ريال </span>
+                          </p>
+                          <p class="line">
+                            تاريخ الطلب : <span> 2024/5/12 </span>
+                          </p>
+                        </div>
+                        <div class="date">
+                          <div class="info">
+                            <img class="icon" src="img/icons/date.svg" alt="" />
+                            2024/2/2
+                          </div>
+                          <div class="info">
+                            <img class="icon" src="img/icons/time.svg" alt="" />
+                            10 : 30 AM
+                          </div>
+                          <div class="progressBar" data-value="100">
+                            <div class="progressLine"></div>
+                          </div>
+                        </div>
+                        <div class="status">
+                          تم اكتمال الطلب
+                          <div class="icon">
+                            <img src="img/icons/delivered.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      id="order3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#ordersAccordion"
+                    >
+                      <div class="accordion-body row">
+                        <div class="col-md-6 p-2">
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/orderID.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              رقم الطلب <span> 1092032 </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/payment.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              طرق الدفع <span> بطاقات الائتمان </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/location.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              العنوان
+                              <span> السعوديه / الرياض/ شارع فيصل </span>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/money.svg"
+                              alt=""
+                            />
+                            <div class="text">
+                              اجمالي السعر <span> 200 ريال </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 p-2">
+                          <div class="info">
+                            <img
+                              class="icon"
+                              src="img/icons/money.svg"
+                              alt=""
+                            />
+                            <div class="text">تفاصيل الطلب</div>
+                          </div>
+                          <div class="orderDetails">
+                            <div class="main">
+                              <span class="num"> 1</span>
+                              <h6>نانو سيراميك x2</h6>
+                              <span class="price"> 200 ريال </span>
+                            </div>
+                            <div class="sub">
+                              <p>زجاج امامي : <span> شفاف اسود </span></p>
+                              <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                              <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                              <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                            </div>
+                          </div>
+                          <div class="orderDetails">
+                            <div class="main">
+                              <span class="num"> 2 </span>
+                              <h6>نانو سيراميك x2</h6>
+                              <span class="price"> 200 ريال </span>
+                            </div>
+                            <div class="sub">
+                              <p>زجاج امامي : <span> شفاف اسود </span></p>
+                              <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                              <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                              <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 p-2">
+                          <!-- Button trigger modal -->
+                          <button
+                            class="customBtn rate"
+                            data-bs-toggle="modal"
+                            data-bs-target="#rateModal"
+                          >
+                            تقييم
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="rateModal"
+                tabindex="-1"
+                aria-labelledby="rateModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="rateModalLabel">
+                        قيم المنتجات
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="stars">
+                          <div class="star-rating">
+                            <input
+                              type="radio"
+                              id="star5"
+                              name="rating"
+                              value="5"
+                            />
+                            <label for="star5" title="5 stars">
+                              <img src="img/icons/star.svg" alt="" />
+                            </label>
+                            <input
+                              type="radio"
+                              id="star4"
+                              name="rating"
+                              value="4"
+                            />
+                            <label for="star4" title="4 stars">
+                              <img src="img/icons/star.svg" alt="" />
+                            </label>
+                            <input
+                              type="radio"
+                              id="star3"
+                              name="rating"
+                              value="3"
+                            />
+                            <label for="star3" title="3 stars">
+                              <img src="img/icons/star.svg" alt="" />
+                            </label>
+                            <input
+                              type="radio"
+                              id="star2"
+                              name="rating"
+                              value="2"
+                            />
+                            <label for="star2" title="2 stars">
+                              <img src="img/icons/star.svg" alt="" />
+                            </label>
+                            <input
+                              type="radio"
+                              id="star1"
+                              name="rating"
+                              value="1"
+                            />
+                            <label for="star1" title="1 star">
+                              <img src="img/icons/star.svg" alt="" />
+                            </label>
+                          </div>
+                        </div>
+                        <textarea
+                          class="form-control"
+                          rows="8"
+                          placeholder="اكتب تجربتك"
+                        ></textarea>
+                        <button type="submit" class="customBtn mt-4">
+                          ارسال
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </content>
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((( / content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!-- ================ Footer ================= -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3 p-3 px-lg-4">
-                    <img loading="lazy" src="img/logo.svg" class="logo" alt="logo">
-                    <p class="info">
-                        نوفر لك قطع زجاج مسيرات متينة وعوازل زجاج الأسيرات بتصاميم مبتكرة
-                    </p>
-                </div>
-                <div class="col-6 col-lg-3 p-3 px-lg-4">
-                    <div class="group">
-                        <h5 class="title"> حول الشركه </h5>
-                        <ul>
-                            <li><a href="ourPatners.html"> شركائنا </a></li>
-                            <li><a href="timeline.html"> تاريخ الشركه </a></li>
-                            <li><a href="products.html"> المنتجات </a></li>
-                            <li><a href="aboutus.html"> من نحن </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col col-lg-3 p-3 px-lg-4">
-                    <div class="group">
-                        <h5 class="title"> تواصل معنا </h5>
-                        <ul>
-                            <li><a href="#!"> @COOLCAR </a></li>
-                            <li><a href="tel:+2010929382"> +2010929382 </a></li>
-                            <li><a href="mailto:info@coolcar.com"> info@coolcar.com </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 p-3 px-lg-4">
-                    <div class="group">
-                        <h5 class="title"> التواصل الاجتماعي </h5>
-                        <div class="social">
-                            <a href="#!" target="_blank">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/facebook.svg" alt="facebook">
-                                </span>
-                                Facebook
-                            </a>
-                            <a href="#!" target="_blank">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/instagram.svg" alt="instagram">
-                                </span>
-                                Instagram
-                            </a>
-                            <a href="#!" target="_blank">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/X.svg" alt="X">
-                                </span>
-                                X
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 p-3 px-lg-4">
+            <img loading="lazy" src="img/logo.svg" class="logo" alt="logo" />
+            <p class="info">
+              نوفر لك قطع زجاج مسيرات متينة وعوازل زجاج الأسيرات بتصاميم مبتكرة
+            </p>
+          </div>
+          <div class="col-6 col-lg-3 p-3 px-lg-4">
+            <div class="group">
+              <h5 class="title">حول الشركه</h5>
+              <ul>
+                <li><a href="Policy-Privacy.html"> السياسه والخصوصيه</a></li>
+                <li><a href="Policy-Privacy.html"> الشروط والاحكام</a></li>
+                <li><a href="products.html"> المنتجات </a></li>
+                <li><a href="aboutus.html"> من نحن </a></li>
+              </ul>
             </div>
-            <!-- copywriting -->
-            <div class="copywriting">
-                <p class="hint">
-                    كل الحقوق محفوظة <a href="#!" target="_blank">
-                        <img src="img/fav.svg" alt=""> Cool Car </a> ©
-                    <script> document.write(new Date().getFullYear())</script>
-                </p>
+          </div>
+          <div class="col col-lg-3 p-3 px-lg-4">
+            <div class="group">
+              <h5 class="title">تواصل معنا</h5>
+              <ul>
+                <li><a href="#!"> @COOLCAR </a></li>
+                <li><a href="tel:+2010929382"> +2010929382 </a></li>
+                <li>
+                  <a href="mailto:info@coolcar.com"> info@coolcar.com </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-6 col-lg-3 p-3 px-lg-4">
+            <div class="group">
+              <h5 class="title">التواصل الاجتماعي</h5>
+              <div class="social">
+                <a href="#!" target="_blank">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/facebook.svg"
+                      alt="facebook"
+                    />
+                  </span>
+                  Facebook
+                </a>
+                <a href="#!" target="_blank">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/instagram.svg"
+                      alt="instagram"
+                    />
+                  </span>
+                  Instagram
+                </a>
+                <a href="#!" target="_blank">
+                  <span class="icon">
+                    <img loading="lazy" src="img/icons/X.svg" alt="X" />
+                  </span>
+                  X
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- copywriting -->
+        <div class="copywriting">
+          <p class="hint">
+            كل الحقوق محفوظة
+            <a href="#!" target="_blank">
+              <img src="img/fav.svg" alt="" /> Cool Car
+            </a>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+
+          <div class="branding">
+            <img src="img/flags/fo1.png" alt="" />
+            <img src="img/flags/fo2.png" alt="" />
+            <img src="img/flags/fo3.png" alt="" />
+            <img src="img/flags/fo4.png" alt="" />
+            <img src="img/flags/fo5.png" alt="" />
+            <img src="img/flags/fo6.png" alt="" />
+            <img src="img/flags/fo7.png" alt="" />
+            <img src="img/flags/fo8.png" alt="" />
+            <img src="img/flags/fo9.jpg" alt="" />
+          </div>
+
+          <p>الرقم الضريبي:: 312097186400003</p>
+        </div>
+      </div>
     </footer>
     <!-- ================ /Footer ================= -->
     <!--////////////////////////////////////////////////////////////////////////////////-->
@@ -577,23 +784,23 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+    <!--Dark mode js-->
+    <script src="js/darkMode.js"></script>
 
     <!-- products rate script -->
     <script>
-        const radioInputs = document.querySelectorAll('.star-rating input');
-        const labels = document.querySelectorAll('.star-rating label');
-        radioInputs.forEach((input, index) => {
-            input.addEventListener('click', () => {
-                labels.forEach((label) => {
-                    label.classList.remove('active');
-                });
-                for (let i = 0; i <= index; i++) {
-                    labels[i].classList.add('active');
-                }
-            });
+      const radioInputs = document.querySelectorAll(".star-rating input");
+      const labels = document.querySelectorAll(".star-rating label");
+      radioInputs.forEach((input, index) => {
+        input.addEventListener("click", () => {
+          labels.forEach((label) => {
+            label.classList.remove("active");
+          });
+          for (let i = 0; i <= index; i++) {
+            labels[i].classList.add("active");
+          }
         });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

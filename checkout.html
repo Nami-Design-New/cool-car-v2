@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title> cool car </title>
-    <meta name="title" content="cool car">
-    <meta name="description" content="cool car ">
+    <title>cool car</title>
+    <meta name="title" content="cool car" />
+    <meta name="description" content="cool car " />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/fav.svg" />
     <!-- bootstrap -->
@@ -22,356 +21,459 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ================  header ================= -->
-        <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand d-lg-none" href="index.html">
-                    <img src="img/logo.svg" alt="">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-lg-none" href="index.html">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                EGP
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                  EGP
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                            EGP
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                                EGP
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                                EGP
-                            </a>
-                            <a class="dropdown-item" href="#">
-                                <img src="img/flags/Flag_of_Egypt.svg" alt="">
-                                EGP
-                            </a>
-                        </div>
-                    </div>
-                    <a class="nav-link" href="login.html">
-                        <img class="icon" src="img/icons/user.svg" alt="">
-                        تسجيل دخول
-                    </a>
-                    <a class="nav-link" href="cart.html">
-                        <img class="icon" src="img/icons/cart.svg" alt="">
-                        السله (0 ر.س)
-                    </a>
-                    <a class="nav-link logo d-none d-lg-flex" href="index.html">
-                        <img src="img/logo.svg" alt="">
-                    </a>
-                    <a class="nav-link" href="#">
-                        الا سئله الشائعه
-                    </a>
-                    <a class="nav-link" href="#">
-                        سياسه الاستبدال
-                    </a>
-                    <a class="nav-link" href="#">
-                        ارشادات التركيب
-                    </a>
-                </div>
+                <a class="dropdown-item" href="#">
+                  <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                  EGP
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+                  EGP
+                </a>
+              </div>
             </div>
-        </nav>
-        <section class="mainLinks">
-            <a href="index.html" class="active"> الصفحة الرئيسية </a>
-            <a href="products.html"> المنتجات </a>
-            <a href="index.html"> حول </a>
-            <a href="index.html"> العروض </a>
-        </section>
+            <!-- start  dark mode -->
+            <img src="img/icons/sun.svg" id="icon" class="Icon_dark" />
+            <!-- End dark mode -->
+
+            <a class="nav-link" href="login.html">
+              <img class="icon" src="img/icons/user.svg" alt="" />
+              تسجيل دخول
+            </a>
+            <a class="nav-link" href="cart.html">
+              <img class="icon" src="img/icons/cart.svg" alt="" />
+              السله (0 ر.س)
+            </a>
+            <a class="nav-link logo d-none d-lg-flex" href="index.html">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <a class="nav-link" href="Questions.html"> الا سئله الشائعه </a>
+            <a class="nav-link" href="Return-exchange.html">
+              سياسه الاستبدال
+            </a>
+            <a class="nav-link" href="#"> ارشادات التركيب </a>
+          </div>
+        </div>
+      </nav>
+      <section class="mainLinks">
+        <a href="index.html" class="active"> الصفحة الرئيسية </a>
+        <a href="products.html"> المنتجات </a>
+        <a href="aboutus"> حول </a>
+        <a href="index.html"> العروض </a>
+      </section>
     </header>
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((((( content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <content>
-        <section class="checkout">
-            <div class="container">
-                <h1 class="pageHead"> عربه التسوق </h1>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-xl-9 p-2">
-                        <!-- total -->
-                        <div class="accordion orders" id="ordersAccordion">
-                            <!-- accordion item -->
-                            <div class="accordion-item">
-                                <div class="accordion-button collapsed " data-bs-toggle="collapse"
-                                    data-bs-target="#order1">
-                                    <div class="checkoutTotal">
-                                        <h5 class="title"> اجمالي الفاتوره </h5>
-                                        <span class="price"> 200 ريال </span>
-                                    </div>
-                                </div>
-                                <div id="order1" class="accordion-collapse collapse" data-bs-parent="#ordersAccordion">
-                                    <div class="accordion-body ">
-                                        <div class="info">
-                                            <img class="icon" src="img/icons/money.svg" alt="">
-                                            <div class="text"> تفاصيل الطلب </div>
-                                        </div>
-                                        <div class="orderDetails">
-                                            <div class="main">
-                                                <span class="num"> 1</span>
-                                                <h6> نانو سيراميك x2 </h6>
-                                                <span class="price"> 200 ريال </span>
-                                            </div>
-                                            <div class="sub">
-                                                <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                            </div>
-                                        </div>
-                                        <div class="orderDetails">
-                                            <div class="main">
-                                                <span class="num"> 2 </span>
-                                                <h6> نانو سيراميك x2 </h6>
-                                                <span class="price"> 200 ريال </span>
-                                            </div>
-                                            <div class="sub">
-                                                <p> زجاج امامي : <span> شفاف اسود </span> </p>
-                                                <p> زجاج جانبي : <span> شفاف ٨٠٪ </span> </p>
-                                                <p> زجاج يسار : <span> شفاف ابيض </span> </p>
-                                                <p> زجاج خلفي : <span> شفاف ملون </span> </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- shipping -->
-                        <div class="shipping">
-                            <div class="head">
-                                <h5 class="title"> عنوان الشحن </h5>
-                                <p class="des"> حدِّد عنوان استلام الطلب، واحرص على صحة بيانات الموقع </p>
-                            </div>
-                            <form class="addresses">
-                                <h6 class="title"> عناوينك </h6>
-                                <div class="btn-group">
-                                    <label class="location" for="location1">
-                                        <input type="radio" class="me-2" name="Choice" id="location1" checked />
-                                        <p>
-                                            السعوديه ، الرياض ، فيلا ١٤
-                                        </p>
-                                        <div class="controls">
-                                            <button type="button" class="btn">
-                                                <img src="img/icons/delete.svg" alt="">
-                                            </button>
-                                            <button type="button" class="btn">
-                                                <img src="img/icons/edit.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </label>
-                                    <label class="location" for="location2">
-                                        <input type="radio" name="Choice" id="location2" />
-                                        <p>
-                                            السعوديه ، الرياض ، فيلا ١٤
-                                        </p>
-                                        <div class="controls">
-                                            <button type="button" class="btn">
-                                                <img src="img/icons/delete.svg" alt="">
-                                            </button>
-                                            <button type="button" class="btn">
-                                                <img src="img/icons/edit.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </label>
-                                    <label class="location" for="location3">
-                                        <input type="radio" name="Choice" id="location3" />
-                                        <p>
-                                            السعوديه ، الرياض ، فيلا ١٤
-                                        </p>
-                                        <div class="controls">
-                                            <button type="button" class="btn">
-                                                <img src="img/icons/delete.svg" alt="">
-                                            </button>
-                                            <button type="button" class="btn">
-                                                <img src="img/icons/edit.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </label>
-                                </div>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-dark p-3 my-3" data-bs-toggle="modal"
-                                    data-bs-target="#mapModal">
-                                    حداد عنوان من الخريطه
-                                </button>
-                                <div class="row">
-                                    <div class="col-md-6 p-2">
-                                        <div class="formGroup">
-                                            <label for="country"> اختر الدولة </label>
-                                            <select class="form-select" name="country" id="country">
-                                                <option value="1"> 1 </option>
-                                                <option value="2"> 2 </option>
-                                                <option value="3"> 3 </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 p-2">
-                                        <div class="formGroup">
-                                            <label for="city"> اختر المدينه </label>
-                                            <select class="form-select" name="city" id="city">
-                                                <option value="1"> 1 </option>
-                                                <option value="2"> 2 </option>
-                                                <option value="3"> 3 </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 p-2">
-                                        <div class="formGroup">
-                                            <label for="district"> الحي </label>
-                                            <input type="text" class="form-control" name="district" id="district">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 p-2">
-                                        <div class="formGroup">
-                                            <label for="street"> الشارع </label>
-                                            <input type="text" class="form-control" name="street" id="street">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 p-2">
-                                        <div class="formGroup">
-                                            <label for="zip"> الرمز البريدي </label>
-                                            <input type="number" class="form-control" name="zip" id="zip">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 p-2">
-                                        <div class="formGroup">
-                                            <label for="des"> وصف البيت (اختياري) </label>
-                                            <textarea class="form-control" name="des" id="des" rows="3"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="customBtn" type="submit"> تاكيد </button>
-                            </form>
-                        </div>
-                        <!-- payment -->
-                        <div class="payment">
-                            <div class="head">
-                                <h5 class="title"> الدفع </h5>
-                                <p class="des"> دفع إلكتروني آمن 100% </p>
-                            </div>
-                            <div class="btn-group">
-                                <label class="pay" for="pay1">
-                                    <input type="radio" class="me-2" name="Choice" id="pay1" checked />
-                                    <img src="img/icons/visa.svg" alt="">
-                                </label>
-                                <label class="pay" for="pay2">
-                                    <input type="radio" name="Choice" id="pay2" />
-                                    <img src="img/icons/applePay.svg" alt="">
-                                </label>
-                                <label class="pay" for="pay3">
-                                    <input type="radio" name="Choice" id="pay3" />
-                                    <img src="img/icons/walletPay.svg" alt="">
-                                </label>
-                            </div>
-                        </div>
+      <section class="checkout">
+        <div class="container">
+          <h1 class="pageHead">عربه التسوق</h1>
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-xl-9 p-2">
+              <!-- total -->
+              <div class="accordion orders" id="ordersAccordion">
+                <!-- accordion item -->
+                <div class="accordion-item">
+                  <div
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#order1"
+                  >
+                    <div class="checkoutTotal">
+                      <h5 class="title">اجمالي الفاتوره</h5>
+                      <span class="price"> 200 ريال </span>
                     </div>
+                  </div>
+                  <div
+                    id="order1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#ordersAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="info">
+                        <img class="icon" src="img/icons/money.svg" alt="" />
+                        <div class="text">تفاصيل الطلب</div>
+                      </div>
+                      <div class="orderDetails">
+                        <div class="main">
+                          <span class="num"> 1</span>
+                          <h6>نانو سيراميك x2</h6>
+                          <span class="price"> 200 ريال </span>
+                        </div>
+                        <div class="sub">
+                          <p>زجاج امامي : <span> شفاف اسود </span></p>
+                          <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                          <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                          <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                        </div>
+                      </div>
+                      <div class="orderDetails">
+                        <div class="main">
+                          <span class="num"> 2 </span>
+                          <h6>نانو سيراميك x2</h6>
+                          <span class="price"> 200 ريال </span>
+                        </div>
+                        <div class="sub">
+                          <p>زجاج امامي : <span> شفاف اسود </span></p>
+                          <p>زجاج جانبي : <span> شفاف ٨٠٪ </span></p>
+                          <p>زجاج يسار : <span> شفاف ابيض </span></p>
+                          <p>زجاج خلفي : <span> شفاف ملون </span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <!-- Modal -->
-        <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">
-                            حداد عنوانك
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="map"></div>
-
-                        <form action="" class="cardForm">
-                            <div class="formGroup">
-                                <input type="text" class="form-control" name="" id="location" placeholder="اكتب موقعك"
-                                    oninput="geocodeAddress()">
-                                <div id="mapView"></div>
-                            </div>
-                            <button class="customBtn mt-4" type="submit"> تاكيد </button>
-                        </form>
-
-                    </div>
-
-
+              </div>
+              <!-- shipping -->
+              <div class="shipping">
+                <div class="head">
+                  <h5 class="title">عنوان الشحن</h5>
+                  <p class="des">
+                    حدِّد عنوان استلام الطلب، واحرص على صحة بيانات الموقع
+                  </p>
                 </div>
+                <form class="addresses">
+                  <h6 class="title">عناوينك</h6>
+
+                  <div class="btn-group">
+                    <label class="location" for="location1">
+                      <input
+                        type="radio"
+                        class="me-2"
+                        name="Choice"
+                        id="location1"
+                        checked
+                      />
+                      <p>السعوديه ، الرياض ، فيلا ١٤</p>
+                      <div class="controls">
+                        <button type="button" class="btn">
+                          <img src="img/icons/delete.svg" alt="" />
+                        </button>
+                        <button type="button" class="btn">
+                          <img src="img/icons/edit.svg" alt="" />
+                        </button>
+                      </div>
+                    </label>
+                    <label class="location" for="location2">
+                      <input type="radio" name="Choice" id="location2" />
+                      <p>السعوديه ، الرياض ، فيلا ١٤</p>
+                      <div class="controls">
+                        <button type="button" class="btn">
+                          <img src="img/icons/delete.svg" alt="" />
+                        </button>
+                        <button type="button" class="btn">
+                          <img src="img/icons/edit.svg" alt="" />
+                        </button>
+                      </div>
+                    </label>
+                    <label class="location" for="location3">
+                      <input type="radio" name="Choice" id="location3" />
+                      <p>السعوديه ، الرياض ، فيلا ١٤</p>
+                      <div class="controls">
+                        <button type="button" class="btn">
+                          <img src="img/icons/delete.svg" alt="" />
+                        </button>
+                        <button type="button" class="btn">
+                          <img src="img/icons/edit.svg" alt="" />
+                        </button>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-dark p-3 my-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mapModal"
+                  >
+                    حداد عنوان من الخريطه
+                  </button>
+
+                  <div class="row">
+                    <div class="col-md-6 p-2">
+                      <div class="formGroup">
+                        <label for="district"> اسم المستلم </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="district"
+                          id="district"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                      <div class="formGroup">
+                        <label for="district"> العنوان </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="district"
+                          id="district"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                      <div class="formGroup">
+                        <label for="district"> رقم المستلم </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="district"
+                          id="district"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                      <div class="formGroup">
+                        <label for="street"> الشارع </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="street"
+                          id="street"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                      <div class="formGroup">
+                        <label for="zip"> الرمز البريدي </label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          name="zip"
+                          id="zip"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                      <div class="formGroup">
+                        <label for="des"> وصف البيت (اختياري) </label>
+                        <textarea
+                          class="form-control"
+                          name="des"
+                          id="des"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="customBtn" type="submit">تاكيد</button>
+                </form>
+              </div>
+
+              <!-- payment -->
+
+              <div class="accordion orders" id="ordersAccordion">
+                <!-- accordion item -->
+                <div class="accordion-item">
+                  <div
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#order1"
+                  >
+                    <div class="checkoutTotal">
+                      <h5 class="title">وسـائل الدفع</h5>
+                    </div>
+                  </div>
+                  <div
+                    id="order1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#ordersAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="info_pay" style="color: #fff">
+                        <div class="text p-1">كـاش</div>
+                        <br />
+                        <div class="text p-1">اونلاين</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="mapModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">حداد عنوانك</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div id="map"></div>
+
+              <form action="" class="cardForm">
+                <div class="formGroup">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="location"
+                    placeholder="اكتب موقعك"
+                    oninput="geocodeAddress()"
+                  />
+                  <div id="mapView"></div>
+                </div>
+                <button class="customBtn mt-4" type="submit">تاكيد</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </content>
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((( / content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!-- ================ Footer ================= -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3 p-3 px-lg-4">
-                    <img loading="lazy" src="img/logo.svg" class="logo" alt="logo">
-                    <p class="info">
-                        نوفر لك قطع زجاج مسيرات متينة وعوازل زجاج الأسيرات بتصاميم مبتكرة
-                    </p>
-                </div>
-                <div class="col-6 col-lg-3 p-3 px-lg-4">
-                    <div class="group">
-                        <h5 class="title"> حول الشركه </h5>
-                        <ul>
-                            <li><a href="ourPatners.html"> شركائنا </a></li>
-                            <li><a href="timeline.html"> تاريخ الشركه </a></li>
-                            <li><a href="products.html"> المنتجات </a></li>
-                            <li><a href="aboutus.html"> من نحن </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col col-lg-3 p-3 px-lg-4">
-                    <div class="group">
-                        <h5 class="title"> تواصل معنا </h5>
-                        <ul>
-                            <li><a href="#!"> @COOLCAR </a></li>
-                            <li><a href="tel:+2010929382"> +2010929382 </a></li>
-                            <li><a href="mailto:info@coolcar.com"> info@coolcar.com </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 p-3 px-lg-4">
-                    <div class="group">
-                        <h5 class="title"> التواصل الاجتماعي </h5>
-                        <div class="social">
-                            <a href="#!" target="_blank">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/facebook.svg" alt="facebook">
-                                </span>
-                                Facebook
-                            </a>
-                            <a href="#!" target="_blank">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/instagram.svg" alt="instagram">
-                                </span>
-                                Instagram
-                            </a>
-                            <a href="#!" target="_blank">
-                                <span class="icon">
-                                    <img loading="lazy" src="img/icons/X.svg" alt="X">
-                                </span>
-                                X
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 p-3 px-lg-4">
+            <img loading="lazy" src="img/logo.svg" class="logo" alt="logo" />
+            <p class="info">
+              نوفر لك قطع زجاج مسيرات متينة وعوازل زجاج الأسيرات بتصاميم مبتكرة
+            </p>
+          </div>
+          <div class="col-6 col-lg-3 p-3 px-lg-4">
+            <div class="group">
+              <h5 class="title">حول الشركه</h5>
+              <ul>
+                <li><a href="Policy-Privacy.html"> السياسه والخصوصيه</a></li>
+                <li><a href="Policy-Privacy.html"> الشروط والاحكام</a></li>
+                <li><a href="products.html"> المنتجات </a></li>
+                <li><a href="aboutus.html"> من نحن </a></li>
+              </ul>
             </div>
-            <!-- copywriting -->
-            <div class="copywriting">
-                <p class="hint">
-                    كل الحقوق محفوظة <a href="#!" target="_blank">
-                        <img src="img/fav.svg" alt=""> Cool Car </a> ©
-                    <script> document.write(new Date().getFullYear())</script>
-                </p>
+          </div>
+          <div class="col col-lg-3 p-3 px-lg-4">
+            <div class="group">
+              <h5 class="title">تواصل معنا</h5>
+              <ul>
+                <li><a href="#!"> @COOLCAR </a></li>
+                <li><a href="tel:+2010929382"> +2010929382 </a></li>
+                <li>
+                  <a href="mailto:info@coolcar.com"> info@coolcar.com </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-6 col-lg-3 p-3 px-lg-4">
+            <div class="group">
+              <h5 class="title">التواصل الاجتماعي</h5>
+              <div class="social">
+                <a href="#!" target="_blank">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/facebook.svg"
+                      alt="facebook"
+                    />
+                  </span>
+                  Facebook
+                </a>
+                <a href="#!" target="_blank">
+                  <span class="icon">
+                    <img
+                      loading="lazy"
+                      src="img/icons/instagram.svg"
+                      alt="instagram"
+                    />
+                  </span>
+                  Instagram
+                </a>
+                <a href="#!" target="_blank">
+                  <span class="icon">
+                    <img loading="lazy" src="img/icons/X.svg" alt="X" />
+                  </span>
+                  X
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- copywriting -->
+        <div class="copywriting">
+          <p class="hint">
+            كل الحقوق محفوظة
+            <a href="#!" target="_blank">
+              <img src="img/fav.svg" alt="" /> Cool Car
+            </a>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+
+          <div class="branding">
+            <img src="img/flags/fo1.png" alt="" />
+            <img src="img/flags/fo2.png" alt="" />
+            <img src="img/flags/fo3.png" alt="" />
+            <img src="img/flags/fo4.png" alt="" />
+            <img src="img/flags/fo5.png" alt="" />
+            <img src="img/flags/fo6.png" alt="" />
+            <img src="img/flags/fo7.png" alt="" />
+            <img src="img/flags/fo8.png" alt="" />
+            <img src="img/flags/fo9.jpg" alt="" />
+          </div>
+
+          <p>الرقم الضريبي:: 312097186400003</p>
+        </div>
+      </div>
     </footer>
     <!-- ================ /Footer ================= -->
     <!--////////////////////////////////////////////////////////////////////////////////-->
@@ -399,68 +501,81 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+    <!--Dark mode js-->
+    <script src="js/darkMode.js"></script>
+
     <script>
-        let map;
-        let marker;
-        let geocoder;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('mapView'), {
-                zoom: 14,
-                mapTypeControl: false,
-                streetViewControl: false,
-            });
-            geocoder = new google.maps.Geocoder();
-            marker = new google.maps.Marker({
-                map: map,
-                draggable: true
-            });
-            marker.addListener('dragend', function () {
-                geocodeLatLng(marker.getPosition());
-            });
-            // Get current location and set it as the initial center
-            getGeoLocation();
-        }
-        function getGeoLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    const pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-                    map.setCenter(pos);
-                    marker.setPosition(pos);
-                    geocodeLatLng(pos); // Reverse geocode the current position
-                }, function () {
-                    console.log('Geolocation service failed. Using default location.');
-                });
-            } else {
-                console.log('Browser does not support Geolocation. Using default location.');
+      let map;
+      let marker;
+      let geocoder;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("mapView"), {
+          zoom: 14,
+          mapTypeControl: false,
+          streetViewControl: false,
+        });
+        geocoder = new google.maps.Geocoder();
+        marker = new google.maps.Marker({
+          map: map,
+          draggable: true,
+        });
+        marker.addListener("dragend", function () {
+          geocodeLatLng(marker.getPosition());
+        });
+        // Get current location and set it as the initial center
+        getGeoLocation();
+      }
+      function getGeoLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            function (position) {
+              const pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude,
+              };
+              map.setCenter(pos);
+              marker.setPosition(pos);
+              geocodeLatLng(pos); // Reverse geocode the current position
+            },
+            function () {
+              console.log(
+                "Geolocation service failed. Using default location."
+              );
             }
+          );
+        } else {
+          console.log(
+            "Browser does not support Geolocation. Using default location."
+          );
         }
-        function geocodeAddress() {
-            const address = document.getElementById('location').value;
-            geocoder.geocode({ 'address': address }, function (results, status) {
-                if (status === 'OK' && results[0]) {
-                    map.setCenter(results[0].geometry.location);
-                    marker.setPosition(results[0].geometry.location);
-                } else {
-                    console.log('Geocode was not successful for the following reason: ' + status);
-                }
-            });
-        }
-        function geocodeLatLng(latlng) {
-            geocoder.geocode({ 'location': latlng }, function (results, status) {
-                if (status === 'OK' && results[0]) {
-                    document.getElementById('location').value = results[0].formatted_address;
-                } else {
-                    console.log('Geocoder failed due to: ' + status);
-                }
-            });
-        }
+      }
+      function geocodeAddress() {
+        const address = document.getElementById("location").value;
+        geocoder.geocode({ address: address }, function (results, status) {
+          if (status === "OK" && results[0]) {
+            map.setCenter(results[0].geometry.location);
+            marker.setPosition(results[0].geometry.location);
+          } else {
+            console.log(
+              "Geocode was not successful for the following reason: " + status
+            );
+          }
+        });
+      }
+      function geocodeLatLng(latlng) {
+        geocoder.geocode({ location: latlng }, function (results, status) {
+          if (status === "OK" && results[0]) {
+            document.getElementById("location").value =
+              results[0].formatted_address;
+          } else {
+            console.log("Geocoder failed due to: " + status);
+          }
+        });
+      }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&language=en&callback=initMap"
-        async></script>
-
-</body>
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&language=en&callback=initMap"
+      async
+    ></script>
+  </body>
 </html>

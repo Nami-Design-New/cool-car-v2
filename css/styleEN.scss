@@ -4,6 +4,8 @@
   --mainColor05: #de01010d;
   --whiteColor: #ffffff;
   --darkColor: #0a0a0b;
+  --darkColorInput: #0a0a0b;
+
   --darkColor2: #141416;
   --lightDarkColor: #1a1818;
   --lightGrayColor: #888b91;
@@ -13,6 +15,25 @@
   --shadow: 0 16px 32px 0 #071c1f1a;
   --bgColor: #0a0a0b;
 }
+.light-theme {
+  --mainColor: #de0101;
+  --mainColor20: #de010133;
+  --mainColor05: #ffffff;
+  --whiteColor: #0a0a0b;
+  --darkColor: #ffffff;
+  --darkColorInput: #eee;
+
+  --darkColor2: #ffffff;
+  --lightDarkColor: #ffffff;
+
+  --lightGrayColor: #888b91;
+  --lightBorderColor: #e1e1e1;
+  --grayColor: #777;
+  --transition: 0.3s ease-in-out;
+  --shadow: 0 16px 32px 0 #fff;
+  --bgColor: #eee;
+}
+
 @font-face {
   font-family: "fontRegular";
   font-display: swap;
@@ -126,6 +147,7 @@ input {
 .form-select,
 .form-control {
   min-height: 40px;
+
   &:focus {
     box-shadow: none;
   }
@@ -581,7 +603,6 @@ footer {
               width: 20px;
               aspect-ratio: 1;
               object-fit: contain;
-             
             }
           }
         }
@@ -840,7 +861,7 @@ footer {
   }
   .form-select,
   .form-control {
-    background-color: var(--darkColor);
+    background-color: var(--darkColorInput);
     border: none;
     min-height: 56px;
     border-radius: 12px;
@@ -1411,7 +1432,7 @@ footer {
         background-size: contain;
         transition: var(--transition);
         filter: brightness(0);
-       
+
         @media screen and (max-width: 768px) {
           width: 16px;
           height: 16px;
@@ -1750,7 +1771,7 @@ header {
         width: 20px;
         object-fit: contain;
         aspect-ratio: 1;
-        filter: brightness(0) invert(1) ;
+        filter: brightness(0) invert(1);
         transform: scaleX(-1);
       }
     }
@@ -1801,6 +1822,7 @@ header {
       max-width: 400px;
       .title {
         font-weight: bold;
+        color: var(--lightBorderColor);
       }
       .des {
         color: var(--grayColor);
@@ -1909,7 +1931,6 @@ header {
     background-color: var(--darkColor);
     border-radius: 40px;
     padding: 16px;
-
   }
   .productSlide {
     text-align: center;
@@ -1933,31 +1954,29 @@ header {
       margin-top: 24px;
       max-height: 200px;
     }
- 
   }
   @media screen and (min-width: 768px) {
-    .swiperControl{
+    .swiperControl {
       position: absolute;
       top: 50%;
       right: 50%;
       transform: translateY(-50%) translateX(50%) !important;
       z-index: 2;
       width: 95%;
-      .swiperBtns{
+      .swiperBtns {
         width: 100%;
         justify-content: space-between;
-         .swiper-button-next,  .swiper-button-prev{
+        .swiper-button-next,
+        .swiper-button-prev {
           background-color: transparent;
-          &::after{
+          &::after {
             filter: brightness(0) invert(1);
           }
-         }
+        }
       }
     }
   }
- 
 }
-
 
 .preloader {
   background-color: var(--darkColor);
@@ -2035,4 +2054,199 @@ header {
   p {
     font-size: 14px;
   }
+}
+
+//intellgant
+.intellgant {
+  background-color: var(--mainColor);
+  color: #fff;
+  padding: 3px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  font-size: 11px;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  &:hover {
+    color: #000;
+  }
+}
+
+//create
+.create {
+  color: #ffffff;
+  &:hover {
+    color: #de0101;
+  }
+}
+///Return-exchange style
+.Return-exchange {
+  margin: 20px;
+  .content_Return-exchange {
+    border: 1px solid var(--whiteColor);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(226, 224, 224, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .content_Return-exchange_guidance {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .content_Return-exchange_Rate {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h3 {
+        color: rgb(75 85 99);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 8px 0px;
+      }
+      .card_Rate {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 50px;
+            border-radius: 50%;
+          }
+        }
+        .Time {
+          color: rgb(156 163 175);
+          font-size: 14px;
+        }
+      }
+      .opinion {
+        color: rgb(75 85 99);
+      }
+    }
+  }
+}
+
+///about_us
+.about_us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  .img {
+    img {
+      border-radius: 12px;
+      margin: 10px;
+    }
+  }
+  .about_us_Text {
+    .Title {
+    }
+    .About_details {
+      h3 {
+        color: var(--mainColor);
+      }
+      p {
+        color: var(--whiteColor);
+      }
+    }
+  }
+}
+.About_Card {
+  border: 1px solid #eee;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1);
+  }
+
+  img {
+    width: 75px;
+  }
+}
+
+.our_version {
+  margin: 10px;
+  h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #de0101;
+    margin: 10px 0px;
+  }
+  p {
+    margin-bottom: 20px;
+    line-height: 23px;
+  }
+}
+.version_img {
+  img {
+    border-radius: 12px;
+    margin: 10px;
+  }
+}
+
+//Policy-Privacy
+.Policy-Privacy {
+  .content_Policy-Privacy {
+    .content_Policy-Privacy_guidance {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 15px;
+
+      gap: 18px;
+      h1 {
+        color: #de0101;
+      }
+    }
+  }
+}
+
+//.Questions
+
+.Questions {
+  padding: 25px;
+  h1 {
+    color: #de0101;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 10px 0px;
+  }
+
+  .accordion {
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    .accordion-item {
+      .accordion-button {
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+// dark mode
+.Icon_dark {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
 }

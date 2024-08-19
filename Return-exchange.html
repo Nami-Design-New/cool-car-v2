@@ -24,6 +24,10 @@
   </head>
 
   <body>
+    <!-- ================ loader ================= -->
+    <div class="preloader">
+      <div class="preloaderImg"></div>
+    </div>
     <!-- ================  header ================= -->
     <header>
       <nav class="navbar navbar-expand-lg">
@@ -84,16 +88,17 @@
             <a class="nav-link logo d-none d-lg-flex" href="index.html">
               <img src="img/logo.svg" alt="" />
             </a>
-            <a class="nav-link" href="Questions.html"> الا سئله الشائعه </a>
-            <a class="nav-link" href="Return-exchange.html">
+            <a class="nav-link" href="Questions.html"> الاسئله الشائعه </a>
+            <a class="nav-link" href="Return-exchange.html" class="active">
               سياسه الاستبدال
             </a>
             <a class="nav-link" href="#"> ارشادات التركيب </a>
           </div>
         </div>
       </nav>
+
       <section class="mainLinks">
-        <a href="index.html" class="active"> الصفحة الرئيسية </a>
+        <a href="index.html"> الصفحة الرئيسية </a>
         <a href="products.html"> المنتجات </a>
         <a href="aboutus"> حول </a>
         <a href="index.html"> العروض </a>
@@ -102,56 +107,70 @@
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((((( content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
-    <content>
-      <section class="profile">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-xl-6 p-2">
-              <div class="contentProfile" data-aos="fade-up">
-                <form action="profile.html" class="cardForm">
-                  <div class="formGroup">
-                    <label for="phone">
-                      <img
-                        class="icon"
-                        loading="lazy"
-                        src="img/icons/phone.svg"
-                        alt="phone"
-                      />
-                      رقم الجوال
-                    </label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      name=""
-                      id="phone"
-                      value="+966"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="formGroup">
-                    <label for="password">
-                      <img
-                        class="icon"
-                        loading="lazy"
-                        src="img/icons/password.svg"
-                        alt="password"
-                      />
-                      كلمة المرور
-                    </label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      name=""
-                      id="password"
-                      placeholder=""
-                    />
-                  </div>
-                  <a class="create" href="register.html">انشاء حساب</a>
 
-                  <button type="submit" class="customBtn mt-4">
-                    تسجيل الدخول
-                  </button>
-                </form>
+    <content>
+      <section class="Return-exchange">
+        <div class="container">
+          <div class="content_Return-exchange">
+            <div class="content_Return-exchange_guidance">
+              <h1>سياسات الاستبدال والاسترجاع</h1>
+              <h3>سياسة الارجاع والاستبدال</h3>
+              <h2>لا تشيل هم مع بيست شيلد حقك محفوظ</h2>
+              <p>
+                - نضمن لك في حالة حدث خطأ من قبلنا في تجهيز المنتجات أو وجد اي
+                عيوب مصنعية فإننا سنتحمل جميع التكاليف و سنقوم بحل مشكلتكم في
+                أسرع وقت ممكن شريطة إبلاغنا خلال 5 أيام من تاريخ الاستلام و قبل
+                التركيب عبر رقم خدمة العملاء و إرسال صور المشكلة و الكرتون الخاص
+                بالشحنة .
+              </p>
+              <p>
+                -وفي حال رغبة العميل في استرجاع المبلغ بسبب عدم فعالية العزل او
+                تغير لون التظليل فيجب على العميل اثبات ذلك عن الطريق التواصل مع
+                خدمة العملاء والتوجه لاحد المراكز المختصة بالتظليل واختبار
+                التظليل بالأجهزة الخاصة في حساب درجة العزل وارسال النتائج.
+              </p>
+              <p>
+                -عند رغبة العميل باستبدال منتج معين أو استرجاعه، فينبغي على
+                العميل مراسلتنا خلال خمسة أيام من استلام المنتج شريطة عدم تركيب
+                المنتج ويتحمل العميل قيمة إرجاع وإرسال المنتجات الجديدة بحسب
+                شركة الشحن المختارة من قبل العميل.
+              </p>
+              <p>
+                - نقدم بيست شيلد المقاسات المناسبة للمركبة، ولكن في حال النقص
+                فإننا نتعهد بتعويض الجزء الناقص بجزء اضافي لتغطية المقاسات،
+                شريطة ألا يكون هذا النقص بسبب خطأ في التركيب.
+              </p>
+              <p>
+                - نضمن في بيست شيلد سلامة وجودة المنتج، وفي حال وقوع اي مشكلة
+                تقع اثناء تركيب المنتج فإن بيست شيلد غير مسؤول عن هذا الخطأ
+                ويتحمل الخطأ المركز الذي تم التركيب فيه.
+              </p>
+            </div>
+
+            <div class="content_Return-exchange_Rate">
+              <h3>تقييمات المنتج (1)</h3>
+              <div class="card_Rate">
+                <span class="info">
+                  <img src="img/icons/avatar_male.webp" alt="" />
+                  <p class="name">محمد احمد</p>
+                </span>
+                <span class="Time">9 اشهر</span>
+              </div>
+              <div class="opinion">
+                <p>السلام عليكم ارغب في استرجاع المنتج</p>
+              </div>
+            </div>
+
+            <div class="content_Return-exchange_Rate">
+              <div class="card_Rate">
+                <span class="info">
+                  <img src="img/logo.svg" alt="" />
+                  <p class="name">Cool Car</p>
+                </span>
+                <span class="Time">9 اشهر</span>
+              </div>
+              <div class="opinion">
+                <p>عليكم السلام الرجاء التواصل مع الدعم الفني</p>
               </div>
             </div>
           </div>
