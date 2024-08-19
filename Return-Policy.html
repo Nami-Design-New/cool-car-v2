@@ -22,7 +22,12 @@
     <!-- Custom style  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
+    <!-- ================ loader ================= -->
+    <div class="preloader">
+      <div class="preloaderImg"></div>
+    </div>
     <!-- ================  header ================= -->
     <header>
       <nav class="navbar navbar-expand-lg">
@@ -41,7 +46,6 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="dropdown">
               <a
@@ -85,15 +89,16 @@
               <img src="img/logo.svg" alt="" />
             </a>
             <a class="nav-link" href="Questions.html"> الاسئله الشائعه </a>
-            <a class="nav-link" href="Return-exchange.html">
+            <a class="nav-link" href="Return-exchange.html" class="active">
               سياسه الاستبدال
             </a>
             <a class="nav-link" href="#"> ارشادات التركيب </a>
           </div>
         </div>
       </nav>
+
       <section class="mainLinks">
-        <a href="index.html" class="active"> الصفحة الرئيسية </a>
+        <a href="index.html"> الصفحة الرئيسية </a>
         <a href="products.html"> المنتجات </a>
         <a href="aboutus"> حول </a>
         <a href="index.html"> العروض </a>
@@ -102,130 +107,69 @@
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
     <!--((((((((((((((((((( content )))))))))))))))))))-->
     <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+
     <content>
-      <section class="profile">
+      <section class="Return-exchange">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-xl-3 p-2">
-              <div class="sideProfile" data-aos="fade-up">
-                <a class="link" href="profile.html">
-                  <span class="icon">
-                    <img
-                      loading="lazy"
-                      src="img/icons/profile.svg"
-                      alt="profile"
-                    />
-                  </span>
-                  تعديل الملف
-                </a>
-                <a class="link" href="orders.html">
-                  <span class="icon">
-                    <img
-                      loading="lazy"
-                      src="img/icons/orders.svg"
-                      alt="orders"
-                    />
-                  </span>
-                  طلباتي
-                </a>
-                <a class="link" href="changePassword.html">
-                  <span class="icon">
-                    <img
-                      loading="lazy"
-                      src="img/icons/password.svg"
-                      alt="password.svg"
-                    />
-                  </span>
-                  تغيير كلمة المرور
-                </a>
-                <a class="link active" href="wallet.html">
-                  <span class="icon">
-                    <img
-                      loading="lazy"
-                      src="img/icons/wallet.svg"
-                      alt="wallet"
-                    />
-                  </span>
-                  المحفظة
-                </a>
-                <a class="link" href="notifications.html">
-                  <span class="icon">
-                    <img
-                      loading="lazy"
-                      src="img/icons/notifications.svg"
-                      alt="notifications"
-                    />
-                  </span>
-                  الاشعارات
-                </a>
-                <a class="link last" href="login.html">
-                  <span class="icon">
-                    <img
-                      loading="lazy"
-                      src="img/icons/logout.svg"
-                      alt="logout"
-                    />
-                  </span>
-                  تسجيل الخروج
-                </a>
+          <div class="content_Return-exchange">
+            <div class="content_Return-exchange_guidance">
+              <h1>سياسات الاسترجاع</h1>
+              <h2>لا تشيل هم مع بيست شيلد حقك محفوظ</h2>
+              <p>
+                - نضمن لك في حالة حدث خطأ من قبلنا في تجهيز المنتجات أو وجد اي
+                عيوب مصنعية فإننا سنتحمل جميع التكاليف و سنقوم بحل مشكلتكم في
+                أسرع وقت ممكن شريطة إبلاغنا خلال 5 أيام من تاريخ الاستلام و قبل
+                التركيب عبر رقم خدمة العملاء و إرسال صور المشكلة و الكرتون الخاص
+                بالشحنة .
+              </p>
+              <p>
+                -وفي حال رغبة العميل في استرجاع المبلغ بسبب عدم فعالية العزل او
+                تغير لون التظليل فيجب على العميل اثبات ذلك عن الطريق التواصل مع
+                خدمة العملاء والتوجه لاحد المراكز المختصة بالتظليل واختبار
+                التظليل بالأجهزة الخاصة في حساب درجة العزل وارسال النتائج.
+              </p>
+              <p>
+                -عند رغبة العميل باستبدال منتج معين أو استرجاعه، فينبغي على
+                العميل مراسلتنا خلال خمسة أيام من استلام المنتج شريطة عدم تركيب
+                المنتج ويتحمل العميل قيمة إرجاع وإرسال المنتجات الجديدة بحسب
+                شركة الشحن المختارة من قبل العميل.
+              </p>
+              <p>
+                - نقدم بيست شيلد المقاسات المناسبة للمركبة، ولكن في حال النقص
+                فإننا نتعهد بتعويض الجزء الناقص بجزء اضافي لتغطية المقاسات،
+                شريطة ألا يكون هذا النقص بسبب خطأ في التركيب.
+              </p>
+              <p>
+                - نضمن في بيست شيلد سلامة وجودة المنتج، وفي حال وقوع اي مشكلة
+                تقع اثناء تركيب المنتج فإن بيست شيلد غير مسؤول عن هذا الخطأ
+                ويتحمل الخطأ المركز الذي تم التركيب فيه.
+              </p>
+            </div>
+
+            <div class="content_Return-exchange_Rate">
+              <h3>تقييمات المنتج (1)</h3>
+              <div class="card_Rate">
+                <span class="info">
+                  <img src="img/icons/avatar_male.webp" alt="" />
+                  <p class="name">محمد احمد</p>
+                </span>
+                <span class="Time">9 اشهر</span>
+              </div>
+              <div class="opinion">
+                <p>السلام عليكم ارغب في استرجاع المنتج</p>
               </div>
             </div>
-            <div class="col-md-8 col-xl-9 p-2">
-              <div class="contentProfile" data-aos="fade-up">
-                <section class="wallet">
-                  <div class="Balance">
-                    <div class="head">
-                      <div class="text">
-                        <h6>الرصيد</h6>
-                        <h2><span>200</span> ريال</h2>
-                      </div>
-                      <img src="img/icons/wallet.svg" class="icon" alt="" />
-                    </div>
-                    <div class="user">
-                      <h6>الأسم</h6>
-                      <h5 class="name">محمد الشريف</h5>
-                    </div>
-                  </div>
-                  <div class="history">
-                    <!-- line -->
-                    <div class="line">
-                      <img src="img/icons/up.svg" alt="" />
-                      <p class="status">تم الشراء بنجاح</p>
-                      <span class="date"> يوم 5 نوفامبر 2024 </span>
-                      <div class="price">200 ريال</div>
-                    </div>
-                    <!-- line -->
-                    <div class="line">
-                      <img src="img/icons/down.svg" alt="" />
-                      <p class="status">تم خصم</p>
-                      <span class="date"> يوم 5 نوفامبر 2024 </span>
-                      <div class="price">200 ريال</div>
-                    </div>
-                  </div>
-                  <div class="chargeWallet">
-                    <div class="head">
-                      <img
-                        src="img/icons/charge-wallet.svg"
-                        class="icon"
-                        alt=""
-                      />
-                      <h6>شحن رصيد</h6>
-                    </div>
-                    <form action="">
-                      <div class="charge">
-                        <img src="img/icons/money.svg" class="icon" alt="" />
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="200 ريال"
-                        />
-                      </div>
-                      <button class="btn" type="submit">
-                        اشحن الان <img src="img/icons/chargeNow.svg" alt="" />
-                      </button>
-                    </form>
-                  </div>
-                </section>
+
+            <div class="content_Return-exchange_Rate">
+              <div class="card_Rate">
+                <span class="info">
+                  <img src="img/logo.svg" alt="" />
+                  <p class="name">Cool Car</p>
+                </span>
+                <span class="Time">9 اشهر</span>
+              </div>
+              <div class="opinion">
+                <p>عليكم السلام الرجاء التواصل مع الدعم الفني</p>
               </div>
             </div>
           </div>

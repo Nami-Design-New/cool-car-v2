@@ -13,6 +13,8 @@
   --transition: 0.3s ease-in-out;
   --shadow: 0 16px 32px 0 #071c1f1a;
   --bgColor: #0a0a0b;
+  --filter: brightness(0) invert(1);
+  --filter_whit_both: brightness(0) invert(1);
 }
 
 .light-theme {
@@ -30,6 +32,8 @@
   --transition: 0.3s ease-in-out;
   --shadow: 0 16px 32px 0 #fff;
   --bgColor: #eee;
+  --filter: none;
+  --filter_whit_both: brightness(0) invert(1);
 }
 
 @font-face {
@@ -145,7 +149,7 @@ input {
 }
 
 [type=email],
-[type=number],
+[type=text],
 [type=tel],
 [type=url] {
   direction: ltr;
@@ -305,7 +309,7 @@ footer .social a .icon img {
   -o-object-fit: contain;
      object-fit: contain;
   transition: var(--transition);
-  filter: brightness(0) invert(1);
+  filter: var(--filter);
 }
 footer .social a:hover {
   margin-right: 8px;
@@ -465,7 +469,7 @@ footer .group ul li a:hover {
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
-  filter: brightness(0) invert(1);
+  filter: var(--filter);
 }
 .profile .sideProfile .link.active {
   color: var(--mainColor);
@@ -474,7 +478,7 @@ footer .group ul li a:hover {
   background-color: var(--mainColor);
 }
 .profile .sideProfile .link.active .icon img {
-  filter: brightness(0) invert(1);
+  filter: var(--filter_whit_both);
 }
 .profile .sideProfile .link.last {
   margin-top: auto;
@@ -551,7 +555,7 @@ footer .group ul li a:hover {
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
-  filter: brightness(0) invert(1);
+  filter: var(--filter);
 }
 .profile .contentProfile .wallet .Balance .user {
   display: flex;
@@ -711,7 +715,7 @@ footer .group ul li a:hover {
   padding: 24px;
 }
 .orders .accordion-item .accordion-button::after {
-  filter: brightness(0) invert(1);
+  filter: var(--filter);
 }
 .orders .accordion-item .accordion-button .shortData {
   display: flex;
@@ -904,7 +908,7 @@ footer .group ul li a:hover {
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
-  filter: brightness(0) invert(1);
+  filter: var(--filter);
 }
 .formGroup .form-select,
 .formGroup .form-control {
@@ -915,11 +919,6 @@ footer .group ul li a:hover {
   color: var(--whiteColor) !important;
   direction: rtl !important;
 }
-.formGroup .form-select:focus,
-.formGroup .form-control:focus {
-  background-color: #000;
-}
-
 .customBtn {
   border: none;
   outline: none;
@@ -936,7 +935,6 @@ footer .group ul li a:hover {
   position: relative;
   overflow: hidden;
   transition: var(--transition);
-  background-color: #000;
   border: 1px solid var(--mainColor);
 }
 .customBtn::after {
@@ -1212,12 +1210,12 @@ footer .group ul li a:hover {
   flex-direction: column;
   gap: 8px;
 }
-.checkout .shipping .btn-group {
+.checkout .btn-group {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.checkout .shipping .btn-group .location {
+.checkout .btn-group .location {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1226,28 +1224,28 @@ footer .group ul li a:hover {
   padding: 8px;
   border-radius: 12px;
 }
-.checkout .shipping .btn-group .location .controls {
+.checkout .btn-group .location .controls {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px;
 }
-.checkout .shipping .btn-group .location .controls .btn {
+.checkout .btn-group .location .controls .btn {
   padding: 0;
   border: none;
   background-color: transparent;
 }
-.checkout .shipping .btn-group .location .controls .btn img {
+.checkout .btn-group .location .controls .btn img {
   width: 20px;
   aspect-ratio: 1;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.checkout .shipping .btn-group .location p {
+.checkout .btn-group .location p {
   flex: 1;
   min-width: 100px;
 }
-.checkout .shipping .btn-group .location:has(input:checked) {
+.checkout .btn-group .location:has(input:checked) {
   border-color: var(--mainColor);
   color: var(--mainColor);
 }
@@ -1276,23 +1274,24 @@ footer .group ul li a:hover {
   gap: 4px;
   flex-wrap: wrap;
 }
-.checkout .payment .btn-group .pay {
+.checkout .payment .btn-group .info_pay {
   display: flex;
   align-items: center;
   gap: 8px;
   border: 1px solid transparent;
   padding: 8px;
   border-radius: 8px;
+  color: #00b67c;
 }
-.checkout .payment .btn-group .pay img {
+.checkout .payment .btn-group .info_pay img {
   height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.checkout .payment .btn-group .pay input {
+.checkout .payment .btn-group .info_pay input {
   display: none;
 }
-.checkout .payment .btn-group .pay:has(input:checked) {
+.checkout .payment .btn-group .info_pay:has(input:checked) {
   border-color: var(--mainColor);
   color: var(--mainColor);
 }
@@ -1331,7 +1330,7 @@ footer .group ul li a:hover {
 }
 .productDetails .itemDetailsSlider {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   gap: 10px;
 }
 .productDetails .itemDetailsSlider .swiper-slide {
@@ -1443,7 +1442,7 @@ footer .group ul li a:hover {
   font-weight: bold;
 }
 .productDetails .features {
-  height: 60vh;
+  height: 78vh;
   overflow-y: auto;
 }
 .productDetails .features::-webkit-scrollbar {
@@ -1646,7 +1645,7 @@ header .navbar .nav-link img {
   border: 8px;
 }
 header .navbar .nav-link img.icon {
-  filter: brightness(0) invert(1);
+  filter: var(--filter);
 }
 header .navbar .nav-link.show, header .navbar .nav-link:hover {
   color: var(--mainColor);
@@ -2180,10 +2179,11 @@ header .mainLinks a.active {
 }
 
 .create {
-  color: #ffffff;
+  color: var(--mainColor);
+  text-decoration: underline;
 }
 .create:hover {
-  color: #de0101;
+  color: var(--whiteColor);
 }
 
 .Return-exchange {
@@ -2315,10 +2315,18 @@ header .mainLinks a.active {
   margin: 10px;
   border-radius: 12px;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .Questions .accordion .accordion-item .accordion-button {
-  background-color: #eee;
+  background-color: var(--lightDarkColor);
+  color: var(--whiteColor);
+  border-color: none;
+}
+.Questions .accordion .accordion-item .accordion-button::after {
+  color: #ffffff;
+}
+.Questions .accordion .accordion-body {
+  background-color: var(--lightDarkColor);
+  color: var(--whiteColor);
 }
 
 .Icon_dark {

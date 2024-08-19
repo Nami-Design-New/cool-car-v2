@@ -17,6 +17,8 @@
   --transition: 0.3s ease-in-out;
   --shadow: 0 16px 32px 0 #071c1f1a;
   --bgColor: #0a0a0b;
+  --filter: brightness(0) invert(1);
+  --filter_whit_both: brightness(0) invert(1);
 }
 .light-theme {
   --mainColor: #de0101;
@@ -35,6 +37,8 @@
   --transition: 0.3s ease-in-out;
   --shadow: 0 16px 32px 0 #fff;
   --bgColor: #eee;
+  --filter: none;
+  --filter_whit_both: brightness(0) invert(1);
 }
 
 @font-face {
@@ -127,7 +131,7 @@ input {
   background-color: var(--mainColor);
 }
 [type="email"],
-[type="number"],
+[type="text"],
 [type="tel"],
 [type="url"] {
   direction: ltr;
@@ -282,7 +286,7 @@ footer {
           height: 100%;
           object-fit: contain;
           transition: var(--transition);
-          filter: brightness(0) invert(1);
+          filter: var(--filter);
         }
       }
       &:hover {
@@ -433,7 +437,7 @@ footer {
           width: 20px;
           height: 20px;
           object-fit: contain;
-          filter: brightness(0) invert(1);
+          filter: var(--filter);
         }
       }
       &.active {
@@ -441,7 +445,7 @@ footer {
         .icon {
           background-color: var(--mainColor);
           img {
-            filter: brightness(0) invert(1);
+            filter: var(--filter_whit_both);
           }
         }
       }
@@ -517,7 +521,7 @@ footer {
             width: 48px;
             aspect-ratio: 1;
             object-fit: contain;
-            filter: brightness(0) invert(1);
+            filter: var(--filter);
           }
         }
         .user {
@@ -673,7 +677,7 @@ footer {
       gap: 16px;
       padding: 24px;
       &::after {
-        filter: brightness(0) invert(1);
+        filter: var(--filter);
       }
       .shortData {
         display: flex;
@@ -872,7 +876,7 @@ footer {
       width: 20px;
       aspect-ratio: 1;
       object-fit: contain;
-      filter: brightness(0) invert(1);
+      filter: var(--filter);
     }
   }
   .form-select,
@@ -884,7 +888,6 @@ footer {
     color: var(--whiteColor) !important;
     direction: rtl !important;
     &:focus {
-      background-color: #000;
     }
   }
 }
@@ -904,7 +907,6 @@ footer {
   position: relative;
   overflow: hidden;
   transition: var(--transition);
-  background-color: #000;
   border: 1px solid var(--mainColor);
   &::after {
     position: absolute;
@@ -1167,45 +1169,46 @@ footer {
       flex-direction: column;
       gap: 8px;
     }
-    .btn-group {
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .location {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
-      .location {
+      align-items: center;
+      gap: 8px;
+      background-color: var(--darkColor);
+      border: 1px solid var(--darkColor2);
+      padding: 8px;
+      border-radius: 12px;
+      .controls {
         display: flex;
         align-items: center;
         gap: 8px;
-        background-color: var(--darkColor);
-        border: 1px solid var(--darkColor2);
         padding: 8px;
-        border-radius: 12px;
-        .controls {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          padding: 8px;
-          .btn {
-            padding: 0;
-            border: none;
-            background-color: transparent;
-            img {
-              width: 20px;
-              aspect-ratio: 1;
-              object-fit: contain;
-            }
+        .btn {
+          padding: 0;
+          border: none;
+          background-color: transparent;
+          img {
+            width: 20px;
+            aspect-ratio: 1;
+            object-fit: contain;
           }
         }
-        p {
-          flex: 1;
-          min-width: 100px;
-        }
-        &:has(input:checked) {
-          border-color: var(--mainColor);
-          color: var(--mainColor);
-        }
+      }
+      p {
+        flex: 1;
+        min-width: 100px;
+      }
+      &:has(input:checked) {
+        border-color: var(--mainColor);
+        color: var(--mainColor);
       }
     }
   }
+
   .payment {
     margin: 24px 0;
     display: flex;
@@ -1229,13 +1232,16 @@ footer {
       display: flex;
       gap: 4px;
       flex-wrap: wrap;
-      .pay {
+      .info_pay {
         display: flex;
         align-items: center;
         gap: 8px;
         border: 1px solid transparent;
         padding: 8px;
         border-radius: 8px;
+        color: #00b67c;
+        .text {
+        }
         img {
           height: 24px;
           object-fit: contain;
@@ -1286,7 +1292,7 @@ footer {
   }
   .itemDetailsSlider {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     gap: 10px;
     .swiper-slide {
       position: relative;
@@ -1395,8 +1401,9 @@ footer {
     font-weight: bold;
   }
   .features {
-    height: 60vh;
+    height: 78vh;
     overflow-y: auto;
+
     &::-webkit-scrollbar {
       width: 0;
       height: 0;
@@ -1586,8 +1593,9 @@ header {
         aspect-ratio: 1;
         object-fit: contain;
         border: 8px;
+
         &.icon {
-          filter: brightness(0) invert(1);
+          filter: var(--filter);
         }
       }
       &.show,
@@ -2084,7 +2092,6 @@ header {
   }
 }
 
-
 //intellgant
 .intellgant {
   background-color: var(--mainColor);
@@ -2106,9 +2113,10 @@ header {
 
 //create
 .create {
-  color: #ffffff;
+  color: var(--mainColor);
+  text-decoration: underline;
   &:hover {
-    color: #de0101;
+    color: var(--whiteColor);
   }
 }
 ///Return-exchange style
@@ -2262,13 +2270,20 @@ header {
     margin: 10px;
     border-radius: 12px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     .accordion-item {
       .accordion-button {
-        background-color: #eee;
+        background-color: var(--lightDarkColor);
+        color: var(--whiteColor);
+        border-color: none;
+
+        &::after {
+          color: #ffffff;
+        }
       }
+    }
+    .accordion-body {
+      background-color: var(--lightDarkColor);
+      color: var(--whiteColor);
     }
   }
 }

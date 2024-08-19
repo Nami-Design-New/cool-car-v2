@@ -109,7 +109,7 @@
           <div class="row justify-content-center">
             <div class="col-md-8 col-xl-9 p-2">
               <!-- total -->
-              <div class="accordion orders" id="ordersAccordion">
+              <div class="accordion orders mb-4" id="ordersAccordion">
                 <!-- accordion item -->
                 <div class="accordion-item">
                   <div
@@ -162,61 +162,120 @@
                   </div>
                 </div>
               </div>
+
+              <div class="accordion orders mb-4" id="ordersAccordion">
+                <!-- accordion item -->
+                <div class="accordion-item">
+                  <div
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#order2"
+                  >
+                    <div class="checkoutTotal d-block">
+                      <h5 class="title">عنوان الشحن</h5>
+                      <p>
+                        حدِّد عنوان استلام الطلب، واحرص على صحة بيانات الموقع
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    id="order2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#ordersAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div class="btn-group">
+                        <label
+                          class="location d-flex align-items-center g-5"
+                          for="location1"
+                        >
+                          <input
+                            type="radio"
+                            class="me-2"
+                            name="Choice"
+                            id="location1"
+                            checked
+                          />
+                          <p>السعوديه ، الرياض ، فيلا ١٤</p>
+                          <div class="controls">
+                            <button type="button" class="btn">
+                              <img src="img/icons/delete.svg" alt="" />
+                            </button>
+                            <button type="button" class="btn">
+                              <img src="img/icons/edit.svg" alt="" />
+                            </button>
+                          </div>
+                        </label>
+                        <label class="location" for="location2">
+                          <input type="radio" name="Choice" id="location2" />
+                          <p>السعوديه ، الرياض ، فيلا ١٤</p>
+                          <div class="controls">
+                            <button type="button" class="btn">
+                              <img src="img/icons/delete.svg" alt="" />
+                            </button>
+                            <button type="button" class="btn">
+                              <img src="img/icons/edit.svg" alt="" />
+                            </button>
+                          </div>
+                        </label>
+
+                        <label class="location" for="location3">
+                          <input type="radio" name="Choice" id="location3" />
+                          <p>السعوديه ، الرياض ، فيلا ١٤</p>
+                          <div class="controls">
+                            <button type="button" class="btn">
+                              <img src="img/icons/delete.svg" alt="" />
+                            </button>
+                            <button type="button" class="btn">
+                              <img src="img/icons/edit.svg" alt="" />
+                            </button>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- payment -->
+              <div class="accordion orders" id="ordersAccordion">
+                <!-- accordion item -->
+                <div class="accordion-item">
+                  <div
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#order3"
+                  >
+                    <div class="checkoutTotal">
+                      <h5 class="title">وسـائل الدفع</h5>
+                    </div>
+                  </div>
+                  <div
+                    id="order3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#ordersAccordion"
+                  >
+                    <div class="accordion-body">
+                      <div
+                        class="info_pay"
+                        style="color: #fff; --hoverColor: red"
+                      >
+                        <div class="text p-1">كـاش</div>
+                        <br />
+                        <div class="text p-1">اونلاين</div>
+                        <br />
+                        <div class="text p-1">محفظه</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <!-- shipping -->
               <div class="shipping">
-                <div class="head">
-                  <h5 class="title">عنوان الشحن</h5>
-                  <p class="des">
-                    حدِّد عنوان استلام الطلب، واحرص على صحة بيانات الموقع
-                  </p>
-                </div>
                 <form class="addresses">
                   <h6 class="title">عناوينك</h6>
 
-                  <div class="btn-group">
-                    <label class="location" for="location1">
-                      <input
-                        type="radio"
-                        class="me-2"
-                        name="Choice"
-                        id="location1"
-                        checked
-                      />
-                      <p>السعوديه ، الرياض ، فيلا ١٤</p>
-                      <div class="controls">
-                        <button type="button" class="btn">
-                          <img src="img/icons/delete.svg" alt="" />
-                        </button>
-                        <button type="button" class="btn">
-                          <img src="img/icons/edit.svg" alt="" />
-                        </button>
-                      </div>
-                    </label>
-                    <label class="location" for="location2">
-                      <input type="radio" name="Choice" id="location2" />
-                      <p>السعوديه ، الرياض ، فيلا ١٤</p>
-                      <div class="controls">
-                        <button type="button" class="btn">
-                          <img src="img/icons/delete.svg" alt="" />
-                        </button>
-                        <button type="button" class="btn">
-                          <img src="img/icons/edit.svg" alt="" />
-                        </button>
-                      </div>
-                    </label>
-                    <label class="location" for="location3">
-                      <input type="radio" name="Choice" id="location3" />
-                      <p>السعوديه ، الرياض ، فيلا ١٤</p>
-                      <div class="controls">
-                        <button type="button" class="btn">
-                          <img src="img/icons/delete.svg" alt="" />
-                        </button>
-                        <button type="button" class="btn">
-                          <img src="img/icons/edit.svg" alt="" />
-                        </button>
-                      </div>
-                    </label>
-                  </div>
                   <!-- Button trigger modal -->
                   <button
                     type="button"
@@ -276,7 +335,7 @@
                       <div class="formGroup">
                         <label for="zip"> الرمز البريدي </label>
                         <input
-                          type="number"
+                          type="text"
                           class="form-control"
                           name="zip"
                           id="zip"
@@ -297,36 +356,6 @@
                   </div>
                   <button class="customBtn" type="submit">تاكيد</button>
                 </form>
-              </div>
-
-              <!-- payment -->
-
-              <div class="accordion orders" id="ordersAccordion">
-                <!-- accordion item -->
-                <div class="accordion-item">
-                  <div
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#order1"
-                  >
-                    <div class="checkoutTotal">
-                      <h5 class="title">وسـائل الدفع</h5>
-                    </div>
-                  </div>
-                  <div
-                    id="order1"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#ordersAccordion"
-                  >
-                    <div class="accordion-body">
-                      <div class="info_pay" style="color: #fff">
-                        <div class="text p-1">كـاش</div>
-                        <br />
-                        <div class="text p-1">اونلاين</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -394,7 +423,7 @@
               <h5 class="title">حول الشركه</h5>
               <ul>
                 <li><a href="Policy-Privacy.html"> السياسه والخصوصيه</a></li>
-                <li><a href="Policy-Privacy.html"> الشروط والاحكام</a></li>
+                <li><a href="conditions.html"> الشروط والاحكام</a></li>
                 <li><a href="products.html"> المنتجات </a></li>
                 <li><a href="aboutus.html"> من نحن </a></li>
               </ul>
