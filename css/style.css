@@ -1324,6 +1324,10 @@ footer .group ul li a:hover {
 .productDetails {
   padding: 80px 0;
 }
+.productDetails .sticky_position {
+  position: sticky;
+  top: 30px;
+}
 .productDetails .pageTitle {
   max-width: 600px;
   margin-bottom: 24px;
@@ -1440,10 +1444,6 @@ footer .group ul li a:hover {
 }
 .productDetails .subTitle {
   font-weight: bold;
-}
-.productDetails .features {
-  height: 78vh;
-  overflow-y: auto;
 }
 .productDetails .features::-webkit-scrollbar {
   width: 0;

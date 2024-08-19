@@ -1286,6 +1286,11 @@ footer {
 }
 .productDetails {
   padding: 80px 0;
+  .sticky_position {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+  }
   .pageTitle {
     max-width: 600px;
     margin-bottom: 24px;
@@ -1401,9 +1406,6 @@ footer {
     font-weight: bold;
   }
   .features {
-    height: 78vh;
-    overflow-y: auto;
-
     &::-webkit-scrollbar {
       width: 0;
       height: 0;

@@ -1264,6 +1264,12 @@ footer {
 }
 .productDetails {
   padding: 80px 0;
+  .sticky_position {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+  }
+
   .pageTitle {
     max-width: 600px;
     margin-bottom: 24px;
@@ -2077,9 +2083,10 @@ header {
 
 //create
 .create {
-  color: #ffffff;
+  color: var(--mainColor);
+  text-decoration: underline;
   &:hover {
-    color: #de0101;
+    color: var(--whiteColor);
   }
 }
 ///Return-exchange style
@@ -2233,13 +2240,20 @@ header {
     margin: 10px;
     border-radius: 12px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     .accordion-item {
       .accordion-button {
-        background-color: #eee;
+        background-color: var(--lightDarkColor);
+        color: var(--whiteColor);
+        border-color: none;
+
+        &::after {
+          color: #ffffff;
+        }
       }
+    }
+    .accordion-body {
+      background-color: var(--lightDarkColor);
+      color: var(--whiteColor);
     }
   }
 }
