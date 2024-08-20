@@ -1454,7 +1454,7 @@ footer .group ul li a:hover {
   flex: 1;
   background-color: var(--mainColor);
   padding: 8px 16px;
-  color: var(--whiteColor);
+  color: var(--lightBorderColor);
   border-radius: 12px;
 }
 .productDetails .productCard .btns .btn.outline {
@@ -2096,12 +2096,13 @@ header .mainLinks a.active {
 }
 .categories .allCategories .categoryCard .new {
   position: absolute;
-  top: 3px;
-  right: 2px;
+  top: 0px;
+  right: 0px;
   background-color: #00b67c;
   color: var(--whiteColor);
   padding: 4px 8px;
   border-radius: 8px;
+  z-index: 2;
 }
 
 .heroSlider {
