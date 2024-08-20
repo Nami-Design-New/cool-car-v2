@@ -457,6 +457,12 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      .bt_log {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
       .pageImage {
         width: 100%;
         height: 200px;
@@ -591,13 +597,13 @@ footer {
             display: flex;
             align-items: center;
             flex: 1;
-            color: var(--whiteColor);
+            color: var(--lightBorderColor);
             background-color: var(--mainColor);
             border-radius: 16px;
             border-bottom-right-radius: 100px;
             border-top-right-radius: 100px;
             gap: 8px;
-            transform: translateX(60px);
+            transform: translateX(12px);
             justify-content: center;
             img {
               width: 20px;
@@ -1879,6 +1885,7 @@ header {
     gap: 16px;
     text-align: center;
     justify-content: center;
+
     .categoryCard {
       display: flex;
       flex-direction: column;
@@ -1886,6 +1893,7 @@ header {
       gap: 8px;
       padding: 12px;
       position: relative;
+      transition: all 0.3s ease;
       img {
         width: 100px;
         object-fit: cover;
@@ -1894,8 +1902,8 @@ header {
       }
       .new {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 3px;
+        right: 2px;
         background-color: #00b67c;
         color: var(--whiteColor);
         padding: 4px 8px;
@@ -2066,16 +2074,16 @@ header {
 .intellgant {
   background-color: var(--mainColor);
   color: #fff;
-  padding: 3px;
-  border-radius: 10px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65px;
-  font-size: 11px;
+  font-size: 14px;
+  padding: 5px;
   position: absolute;
-  left: 4px;
+  left: 3px;
   top: 3px;
+  text-wrap: nowrap;
   &:hover {
     color: #000;
   }
@@ -2263,4 +2271,108 @@ header {
   width: 28px;
   height: 28px;
   cursor: pointer;
+}
+
+//  choose payment
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+input[type="radio"][id^="myCheckbox"] {
+  display: none;
+}
+
+label {
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 4px 0px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.label_img {
+  border: 1px solid #eee;
+  padding: 8px 50px;
+  border-radius: 8px;
+  background-color: var(--darkColor);
+  color: var(--mainColor);
+  font-weight: 600;
+  margin: 5px;
+}
+
+label:before {
+  background-color: var(--darkColor);
+  color: rgb(63, 27, 27);
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 30px;
+  width: 30px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + label {
+  border-color: var(--mainColor);
+}
+
+:checked + label:before {
+  content: "✓";
+  background-color: var(--mainColor);
+  color: #fff;
+  transform: scale(1);
+}
+
+:checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+
+.form-step-active {
+  display: block;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--mainColor);
+  color: var(--darkColor2);
+  cursor: pointer;
+  &:hover {
+    background-color: #1f1f1f;
+    color: #f7941d;
+  }
+}
+
+button:disabled {
+  background-color: #aaa;
+}
+
+.submit-btn {
+  background-color: #0e110e;
 }

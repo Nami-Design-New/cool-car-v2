@@ -84,7 +84,26 @@
             <a class="nav-link logo d-none d-lg-flex" href="index.html">
               <img src="img/logo.svg" alt="" />
             </a>
-            <a class="nav-link" href="Questions.html"> الا سئله الشائعه </a>
+            <!--lang-->
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <img src="img/icons/england-20.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <a class="nav-link" href="Questions.html"> الاسئله الشائعه </a>
             <a class="nav-link" href="Return-exchange.html">
               سياسه الاستبدال
             </a>
@@ -236,127 +255,52 @@
                   </div>
                 </div>
               </div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-dark p-3 my-3"
+                data-bs-toggle="modal"
+                data-bs-target="#mapModal"
+              >
+                <img
+                  src="img/icons/more-20.svg"
+                  alt=""
+                  style="width: 25px; margin-inline-end: 3px"
+                />
 
-              <!-- payment -->
-              <div class="accordion orders" id="ordersAccordion">
-                <!-- accordion item -->
-                <div class="accordion-item">
-                  <div
-                    class="accordion-button collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#order3"
-                  >
-                    <div class="checkoutTotal">
-                      <h5 class="title">وسـائل الدفع</h5>
-                    </div>
-                  </div>
-                  <div
-                    id="order3"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#ordersAccordion"
-                  >
-                    <div class="accordion-body">
-                      <div
-                        class="info_pay"
-                        style="color: #fff; --hoverColor: red"
-                      >
-                        <div class="text p-1">كـاش</div>
-                        <br />
-                        <div class="text p-1">اونلاين</div>
-                        <br />
-                        <div class="text p-1">محفظه</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                اضف عنوان جديد
+              </button>
+
+              <!--start  payment -->
+              <div class="mb-1">
+                
+                <label for="exampleInputEmail1" class="form-label"
+                  >طريقه الدفع
+                </label>
+                <ul>
+                  <li>
+                    <input type="radio" id="myCheckbox1" name="cash" />
+                    <label class="label_img" for="myCheckbox1"
+                      >محفظه<img src="img/icons/cash1.svg" alt="" />
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" id="myCheckbox3" name="cash" />
+                    <label class="label_img" for="myCheckbox3"
+                      >كاش<img src="img/icons/wallet4.svg" alt=""
+                    /></label>
+                  </li>
+
+                  <li>
+                    <input type="radio" id="myCheckbox4" name="cash" />
+                    <label class="label_img" for="myCheckbox4"
+                      >اونلاين<img src="img/icons/online-20.svg" alt=""
+                    /></label>
+                  </li>
+                </ul>
               </div>
-
-              <!-- shipping -->
-              <div class="shipping">
-                <form class="addresses">
-                  <h6 class="title">عناوينك</h6>
-
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-dark p-3 my-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#mapModal"
-                  >
-                    حداد عنوان من الخريطه
-                  </button>
-
-                  <div class="row">
-                    <div class="col-md-6 p-2">
-                      <div class="formGroup">
-                        <label for="district"> اسم المستلم </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="district"
-                          id="district"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                      <div class="formGroup">
-                        <label for="district"> العنوان </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="district"
-                          id="district"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                      <div class="formGroup">
-                        <label for="district"> رقم المستلم </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="district"
-                          id="district"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                      <div class="formGroup">
-                        <label for="street"> الشارع </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="street"
-                          id="street"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                      <div class="formGroup">
-                        <label for="zip"> الرمز البريدي </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="zip"
-                          id="zip"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 p-2">
-                      <div class="formGroup">
-                        <label for="des"> وصف البيت (اختياري) </label>
-                        <textarea
-                          class="form-control"
-                          name="des"
-                          id="des"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="customBtn" type="submit">تاكيد</button>
-                </form>
-              </div>
+              <!--  End payment -->
             </div>
           </div>
         </div>
@@ -375,7 +319,6 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">حداد عنوانك</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -383,6 +326,80 @@
                 aria-label="Close"
               ></button>
             </div>
+
+            <div class="shipping">
+              <form class="addresses">
+                <div class="row">
+                  <div class="col-md-6 p-2">
+                    <div class="formGroup">
+                      <label for="district"> اسم المستلم </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="district"
+                        id="district"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-2">
+                    <div class="formGroup">
+                      <label for="district"> العنوان </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="district"
+                        id="district"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-2">
+                    <div class="formGroup">
+                      <label for="district"> رقم المستلم </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="district"
+                        id="district"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-2">
+                    <div class="formGroup">
+                      <label for="street"> الشارع </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="street"
+                        id="street"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-2">
+                    <div class="formGroup">
+                      <label for="zip"> الرمز البريدي </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="zip"
+                        id="zip"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-2">
+                    <div class="formGroup">
+                      <label for="des"> وصف البيت (اختياري) </label>
+                      <textarea
+                        class="form-control"
+                        name="des"
+                        id="des"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
             <div class="modal-body">
               <div id="map"></div>
 

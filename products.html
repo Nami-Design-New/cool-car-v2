@@ -84,7 +84,26 @@
             <a class="nav-link logo d-none d-lg-flex" href="index.html">
               <img src="img/logo.svg" alt="" />
             </a>
-            <a class="nav-link" href="Questions.html"> الا سئله الشائعه </a>
+            <!--lang-->
+            <div class="dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="img/flags/Flag_of_Egypt.svg" alt="" />
+              </a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <img src="img/icons/england-20.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <a class="nav-link" href="Questions.html"> الاسئله الشائعه </a>
             <a class="nav-link" href="Return-exchange.html">
               سياسه الاستبدال
             </a>
@@ -138,28 +157,53 @@
       <section class="categories">
         <div class="container">
           <h4 class="headTitle" data-aos="fade-up">الاقسام</h4>
-          <div class="allCategories" data-aos="fade-up">
-            <a href="#!" class="categoryCard">
-              <img src="img/bannerImg2.png" alt="" />
-              <h5>زجاج</h5>
-            </a>
 
-            <a href="#!" class="categoryCard">
-              <img src="img/bannerImg2.png" alt="" />
-              <h5>عوازل</h5>
-            </a>
+          <!--start  payment -->
+          <div class="allCategories mb-1">
+            <ul class="category_list">
+              <li>
+                <input type="radio" id="myCheckbox1" name="cash" />
+                <label class="label_img" for="myCheckbox1">
+                  <a class="categoryCard">
+                    <img src="img/bannerImg2.png" alt="" />
+                    <h5>زجاج</h5>
+                  </a>
+                </label>
+              </li>
 
-            <a href="#!" class="categoryCard">
-              <img src="img/bannerImg2.png" alt="" />
-              <h5>ادوات</h5>
-            </a>
+              <li>
+                <input type="radio" id="myCheckbox3" name="cash" />
+                <label class="label_img" for="myCheckbox3">
+                  <a class="categoryCard">
+                    <img src="img/bannerImg2.png" alt="" />
+                    <h5>عوازل</h5>
+                  </a>
+                </label>
+              </li>
 
-            <a href="#!" class="categoryCard">
-              <img src="img/bannerImg2.png" alt="" />
-              <h5>منتجات النظافه</h5>
-              <span class="new"> جديد </span>
-            </a>
+              <li>
+                <input type="radio" id="myCheckbox4" name="cash" />
+                <label class="label_img" for="myCheckbox4">
+                  <a class="categoryCard">
+                    <img src="img/bannerImg2.png" alt="" />
+                    <h5>ادوات</h5>
+                  </a>
+                </label>
+              </li>
+
+              <li>
+                <input type="radio" id="myCheckbox5" name="cash" />
+                <label class="label_img" for="myCheckbox5">
+                  <a class="categoryCard">
+                    <img src="img/bannerImg2.png" alt="" />
+                    <h5>منتجات النظافه</h5>
+                    <span class="new"> جديد </span>
+                  </a>
+                </label>
+              </li>
+            </ul>
           </div>
+          <!--  End payment -->
         </div>
       </section>
       <!-- products -->
