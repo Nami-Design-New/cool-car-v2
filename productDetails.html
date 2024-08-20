@@ -295,6 +295,22 @@
                   </div>
                 </div>
               </div>
+              <div class="container">
+                <button
+                  type="button"
+                  class="btn btn-dark p-3 my-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mapModal"
+                >
+                  <img
+                    src="img/icons/more-20.svg"
+                    alt=""
+                    style="width: 25px; margin-inline-end: 3px"
+                  />
+                  اضافه رأي
+                </button>
+              </div>
+
               <div class="swiper" data-aos="fade-up">
                 <div class="swiper-wrapper">
                   <!-- swiper Slide -->
@@ -368,22 +384,6 @@
                 </div>
               </div>
             </div>
-            <!-- Button trigger modal -->
-            <div class="container">
-              <button
-                type="button"
-                class="btn btn-dark p-3 my-3"
-                data-bs-toggle="modal"
-                data-bs-target="#mapModal"
-              >
-                <img
-                  src="img/icons/more-20.svg"
-                  alt=""
-                  style="width: 25px; margin-inline-end: 3px"
-                />
-                اضافه رأي
-              </button>
-            </div>
           </section>
         </div>
       </section>
@@ -415,6 +415,20 @@
                 <div class="row">
                   <div class="col-md-12 p-2">
                     <div class="formGroup">
+                      <label for="des"> اضف تقيمك</label>
+
+                      <div class="rate">
+                        <img class="star" src="img/icons/star.svg" alt="" />
+                        <img class="star" src="img/icons/star.svg" alt="" />
+                        <img class="star" src="img/icons/star.svg" alt="" />
+                        <img class="star" src="img/icons/star.svg" alt="" />
+                        <img class="star" src="img/icons/star.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 p-2">
+                    <div class="formGroup">
                       <label for="des"> اكتب رأيك</label>
                       <textarea
                         class="form-control"
@@ -425,6 +439,7 @@
                     </div>
                     <button class="customBtn mt-4" type="submit">تاكيد</button>
                   </div>
+                  
                 </div>
               </form>
             </div>

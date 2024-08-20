@@ -930,6 +930,9 @@ footer .group ul li a:hover {
      object-fit: contain;
   filter: var(--filter);
 }
+.formGroup .rate .star {
+  width: 20px;
+}
 .formGroup .form-select,
 .formGroup .form-control {
   background-color: var(--darkColorInput);

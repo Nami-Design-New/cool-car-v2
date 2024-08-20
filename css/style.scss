@@ -898,6 +898,11 @@ footer {
       filter: var(--filter);
     }
   }
+  .rate {
+    .star {
+      width: 20px;
+    }
+  }
   .form-select,
   .form-control {
     background-color: var(--darkColorInput);
