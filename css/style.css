@@ -175,6 +175,7 @@ input {
 .form-select,
 .form-control {
   min-height: 40px;
+  background-color: var(--darkColor2);
 }
 .form-select:focus,
 .form-control:focus {
@@ -1164,7 +1165,7 @@ footer .group ul li a:hover {
 .cart .cartItem .options select {
   background-color: var(--darkColor);
   color: var(--whiteColor);
-  border: 1px solid var(--darkColor2);
+  border: 1px solid var(--mainColor);
   border-radius: 12px;
 }
 .cart .cartItem .options .formGroup label .icon {
@@ -1193,6 +1194,9 @@ footer .group ul li a:hover {
   color: var(--lightBorderColor);
   border-radius: 100px;
   box-shadow: var(--shadow);
+}
+.quantity .qty {
+  color: var(--mainColor);
 }
 .quantity input {
   background: transparent;

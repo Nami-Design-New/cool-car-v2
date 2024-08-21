@@ -154,12 +154,14 @@ input {
 .form-select,
 .form-control {
   min-height: 40px;
+  background-color: var(--darkColor2);
   &:focus {
     box-shadow: none;
   }
 }
 .tooltip {
   --bs-tooltip-bg: var(--textlightGrayr);
+
   .tooltip-inner {
     font-size: 10px;
     padding: 8px 16px !important;
@@ -1127,7 +1129,7 @@ footer {
       select {
         background-color: var(--darkColor);
         color: var(--whiteColor);
-        border: 1px solid var(--darkColor2);
+        border: 1px solid var(--mainColor);
         border-radius: 12px;
       }
       .formGroup label .icon {
@@ -1156,6 +1158,9 @@ footer {
     color: var(--lightBorderColor);
     border-radius: 100px;
     box-shadow: var(--shadow);
+  }
+  .qty {
+    color: var(--mainColor);
   }
   input {
     background: transparent;
