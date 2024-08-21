@@ -233,7 +233,6 @@ footer .logo {
   -o-object-position: right;
      object-position: right;
   margin-bottom: 16px;
-  filter: brightness(0) invert(1);
 }
 footer .info {
   font-size: 14px;
@@ -1533,7 +1532,6 @@ footer .group ul li a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   transition: var(--transition);
-  filter: brightness(0);
   transform: scaleX(-1);
 }
 @media screen and (max-width: 768px) {
@@ -1690,13 +1688,14 @@ header .navbar .logo img {
 header .navbar .dropdown-menu {
   background-color: var(--lightDarkColor);
   padding: 0px;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 header .navbar .dropdown-menu .dropdown-item {
   color: var(--whiteColor);
   padding: 12px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 12px;
   gap: 8px;
 }
@@ -1946,7 +1945,7 @@ header .mainLinks a.active {
 .banner .container .text .btn {
   margin-top: 16px;
   padding: 8px 24px;
-  color: var(--whiteColor);
+  color: var(--lightBorderColor);
   background-color: var(--mainColor);
   width: -moz-fit-content;
   width: fit-content;
@@ -2189,7 +2188,7 @@ header .mainLinks a.active {
   }
   .heroSlider .swiperControl .swiperBtns .swiper-button-next::after,
   .heroSlider .swiperControl .swiperBtns .swiper-button-prev::after {
-    filter: brightness(0) invert(1);
+    color: #173a75;
   }
 }
 
@@ -2671,4 +2670,33 @@ button:disabled {
 .star_rate .rating-stars input:checked:hover ~ .rating-counter:before {
   animation: none !important;
   color: #ffab00 !important;
+}
+
+.land_drop .dropdown-menu {
+  background-color: var(--lightDarkColor);
+  padding: 0px;
+  border-radius: 14px;
+  --bs-dropdown-min-width: 5rem;
+}
+.land_drop .dropdown-menu .dropdown-item {
+  color: var(--whiteColor);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  gap: 8px;
+}
+.land_drop .dropdown-menu .dropdown-item img {
+  width: 24px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+.land_drop .dropdown-menu .dropdown-item:hover {
+  color: var(--mainColor);
+}
+.land_drop .dropdown-menu[data-bs-popper] {
+  right: -50%;
 }/*# sourceMappingURL=style.css.map */
