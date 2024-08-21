@@ -379,6 +379,7 @@ footer .group ul li a:hover {
 .uploadImage .uploadImageLabel img {
   display: block;
   width: 150px;
+  height: 150px;
   aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1161,7 +1162,7 @@ footer .group ul li a:hover {
   align-items: center;
   justify-content: center;
   background-color: var(--mainColor);
-  color: var(--whiteColor);
+  color: var(--lightBorderColor);
   border-radius: 100px;
   box-shadow: var(--shadow);
 }
