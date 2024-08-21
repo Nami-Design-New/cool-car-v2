@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Spinner loader
-   $(".preloader").delay(1000).fadeOut(300);
+  $(".preloader").delay(1000).fadeOut(300);
   // AOS delay setup
   $("section").each(function () {
     const sectionDivs = $(this).find("[data-aos]");
@@ -18,8 +18,12 @@ $(document).ready(function () {
     once: true,
   });
   // Initialize Bootstrap tooltips
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
   // Initialize counter up
   const counterUp = window.counterUp.default;
   const callback = (entries) => {
@@ -56,8 +60,19 @@ $(document).ready(function () {
   });
 });
 
-document.querySelectorAll('.progressBar').forEach(bar => {
-  const value = bar.getAttribute('data-value');  // Get the value from data-value attribute
-  const progressLine = bar.querySelector('.progressLine');
-  progressLine.style.width = `${value}%`;        // Set the width of the progress line
+document.querySelectorAll(".progressBar").forEach((bar) => {
+  const value = bar.getAttribute("data-value"); // Get the value from data-value attribute
+  const progressLine = bar.querySelector(".progressLine");
+  progressLine.style.width = `${value}%`; // Set the width of the progress line
 });
+
+// dark mode
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+  document.body.classList.toggle("light-theme");
+  if (document.body.classList.contains("light-theme")) {
+    icon.src = "/img/icons/darks.svg";
+  } else {
+    icon.src = "/img/icons/sun.svg";
+  }
+};
